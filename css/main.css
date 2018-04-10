@@ -1,0 +1,159 @@
+body{
+
+}
+
+.section-wrapper{
+	max-width: 1300px;
+	padding: 0 2em;
+	margin: 0 auto;
+}
+
+header{
+	border-bottom: 1px solid #ddd;
+}
+
+header #logo{
+	font-size: 1.15em;
+}
+
+#logoImage{
+	width: 50px;
+	height: 50px;
+	padding: 10px;
+	border-radius: 50%;
+	background: #f0f0f0;
+}
+
+#logoImage img{
+	width: 100% !important;
+	height: auto !important;
+}
+
+nav a{
+	font-family: SemiBold, sans-serif;
+	height: 70px;
+	padding: 0 1.1em;
+	text-transform: uppercase;
+	font-size: 0.95em;
+	font-size: 1.02em;
+	color: #777;
+}
+
+nav a.active{
+	font-family: Bold, sans-serif;
+	color: #003a75;
+}
+
+.section-title{
+	font-family: Bold, sans-serif;
+	font-size: 1.7em;
+	display: inline-block;
+	position: relative;
+	min-height: 45px;
+	margin-bottom: 1em;
+}
+
+.section-title.centered{
+	display: block;
+	text-align: center;
+	padding-bottom: 2.7em;
+}
+
+.section-title:after{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 2px;
+	width: 60%;
+	background: #555;
+}
+
+.section-title.centered:after{
+	right: 0;
+	margin: auto;
+	width: 90%;
+	max-width: 120px;
+	margin-bottom: 1.9em;
+}
+
+.cta{
+    position: relative;
+    background: #ddd;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.cta:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.cta .text{
+    min-height: 210px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.cta .text h5{
+    font-size: 2em;
+    line-height: 1.3em;
+    font-family: Regular, sans-serif;
+    font-weight: normal;
+    margin-bottom: 0.2em;
+}
+
+.cta .text p{
+    max-width: 500px;
+    font-size: 1em;
+    line-height: 1.7em;
+    margin-bottom: 0.9em;
+}
+
+.cta .text .btn{
+    min-width: 220px;
+    border-radius: 50px;
+    padding: 0.9em 2.6em;
+    background: #222;
+    color: #fff;
+}
+
+footer{
+	padding-top: 5em;
+	padding-bottom: 2em;
+	background: #000;
+	color: #999;
+}
+
+footer .footer-section h5{
+	color: #fff;
+	font-size: 1.1em;
+	margin-bottom: 1.3em;
+}
+
+footer .footer-section a,
+footer .footer-section p{
+	display: block;
+	padding: 0.4em 0;
+}
+
+footer .footer-section p span{
+	color: #ddd;
+	margin-right: 0.5em;
+}
+
+footer .section-wrapper{
+	max-width: 1050px;
+}
+
+footer #copyright{
+	margin-top: 2em;
+	padding-top: 2em;
+	border-top: 1px solid #252525;
+}
