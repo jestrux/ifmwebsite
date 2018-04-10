@@ -3,6 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>IFM</title>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#003a75">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#003a75">
+    <meta name="theme-color" content="#003a75">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#003a75">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="IFM Staff">
+
+
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/flexboxgrid.min.css">
 	<link rel="stylesheet" href="css/flex.css">
@@ -10,8 +21,8 @@
 	<link rel="stylesheet" href="css/home.css">
 	<link rel="icon" href="logo.png">
 </head>
-<body>
-	<header>
+<body class="show-na">
+	<header class="for-lg">
 		<div class="layout center justified section-wrapper">
 			<a id="logo" href="/" class="layout center">
 				<span id="logoImage">
@@ -31,6 +42,29 @@
 			</nav>
 		</div>
 	</header>
+
+	<div id="mobNav" class="for-mob">
+	    <div id="mobNavBar" class="layout center justified section-wrapper">
+	        <a id="logo" class="layout center" href="#">
+	            <img src="img/logo.png">
+	        </a>
+
+	        <button id="menuToggler" class="hamburger hamburger--slider" type="button" onclick="toggleMobNav()">
+	          <span class="hamburger-box">
+	            <span class="hamburger-inner"></span>
+	          </span>
+	        </button>
+	    </div>
+
+	    <nav id="mainNavLinks" class="mainNavLinks layout vertical center text-center">
+	        <a href="#" onclick="toggleMobNav()" class="layout center-center active">HOME</a>
+			<a href="#" onclick="toggleMobNav()" class="layout center-center">ACADEMICS</a>
+			<a href="#" onclick="toggleMobNav()" class="layout center-center">STAFF</a>
+			<a href="#" onclick="toggleMobNav()" class="layout center-center">NEWS</a>
+			<a href="#" onclick="toggleMobNav()" class="layout center-center">EVENTS</a>
+			<a href="#" onclick="toggleMobNav()" class="layout center-center">CONTACT US</a>
+	    </nav>
+	</div>
 
 	<main>
 		<div id="banner">
@@ -220,7 +254,7 @@
 				<p><span>FAX:</span> +255 98210842</p>
 			</div>
 
-			<div class="footer-section">
+			<div class="footer-section for-lg">
 				<h5>SITE LINKS</h5>
 				<a href="#">Home</a>
 				<a href="#">Academics</a>
@@ -228,7 +262,7 @@
 				<a href="#">Events</a>
 			</div>
 
-			<div class="footer-section">
+			<div class="footer-section for-lg">
 				<h5>QUICK LINKS</h5>
 				<a href="#">About Us</a>
 				<a href="#">FAQs</a>
@@ -241,7 +275,7 @@
 			<div id="copyright" class="section-wrapper layout justified">
 				<span>Copyright &copy; 2018 Institute of Finance Management</span>
 
-				<div class="layout center justified">
+				<div class="layout center justified for-lg">
 					<a href="#">Privacy</a>
 					<a href="#">Site Map</a>
 					<a href="#">Terms &amp; Conditions</a>
