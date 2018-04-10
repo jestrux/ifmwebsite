@@ -1,7 +1,62 @@
 #banner{
-	height: 500px;
 	/*border-bottom: 1px solid #ddd;*/
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-image: url(../img/banner.jpg);
+}
+
+#banner .text{
+	height: 570px;
+	z-index: 1;
+	color: #fff;
+}
+
+#banner h2{
+	font-family: Black, sans-serif;
+	text-align: center;
+	font-size: 3.1em;
+	max-width: 800px;
+}
+
+#banner h2 span{
+	font-family: Regular, sans-serif;
+	display: block;
+	font-size: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+#banner:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.8;
 	background: #003a75;
+}
+
+#bannerScroller{
+	position: absolute;
+	right: 0;
+	left: 0;
+	margin: auto;
+	bottom: 3em;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 3px solid #fff;
+	opacity: 0.8;
+}
+
+#bannerScroller svg{
+	animation: drop 1.5s infinite;
+}
+
+@keyframes drop{
+	50%{
+		transform: translateY(10%);
+	}
 }
 
 section{
@@ -171,4 +226,17 @@ section{
 
 #ctaJoin{
 	margin-bottom: 4em;
+	background-image: url(../img/cta-join.jpg);
+	background-attachment: fixed;
+	color: #fff;
+}
+
+#ctaJoin .btn{
+	background: #fff;
+	color: #000;
+	margin-top: 0.5em;
+}
+
+#ctaJoin:after{
+	background: rgba(0, 0, 0, 0.8);
 }
