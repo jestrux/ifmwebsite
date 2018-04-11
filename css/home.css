@@ -46,7 +46,6 @@
 	height: 50px;
 	border-radius: 50%;
 	border: 3px solid #fff;
-	opacity: 0.8;
 }
 
 #bannerScroller svg{
@@ -74,6 +73,7 @@ section{
 	margin: auto;
 	height: 1px;
 	background: #ddd;
+	display: none;
 }
 
 .an-event{
@@ -122,8 +122,8 @@ section{
 }
 
 #announcements{
-	padding: 3em 2em;
-	background: #f0f0f0;
+	padding: 1em 2em;
+	border-left: 1px solid #ddd;
 }
 
 #announcements .section-title{
@@ -141,6 +141,10 @@ section{
 	content: ">> ";
 	padding-right: 0.5em;
 	align-self: flex-start;
+}
+
+#sectionNews{
+	background: #f0f0f0;
 }
 
 #sectionNews .section-title{
@@ -179,7 +183,20 @@ section{
 }
 
 #ctaJoin{
-	margin-bottom: 1.5em !important;
+	margin-bottom: 1.5em;
+	background-image: url(../img/cta-join.jpg);
+	background-attachment: fixed;
+	color: #fff;
+}
+
+#ctaJoin .btn{
+	background: #fff;
+	color: #000;
+	margin-top: 0.8em;
+}
+
+#ctaJoin:after{
+	background: rgba(0, 0, 0, 0.58);
 }
 
 #sectionCampus .section-wrapper{
@@ -223,23 +240,6 @@ section{
 
 #sectionCampus .campus-item a{
 	
-}
-
-#ctaJoin{
-	margin-bottom: 4em;
-	background-image: url(../img/cta-join.jpg);
-	background-attachment: fixed;
-	color: #fff;
-}
-
-#ctaJoin .btn{
-	background: #fff;
-	color: #000;
-	margin-top: 0.5em;
-}
-
-#ctaJoin:after{
-	background: rgba(0, 0, 0, 0.8);
 }
 
 /*MEDIA QUERIES*/
