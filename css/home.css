@@ -167,6 +167,8 @@ section{
 
 #sectionNews .news-item .image{
 	/* height: 140px; */
+	height: 100%;
+	border-radius: 0.25em;
 	background: #ddd;
 	flex-basis: 40%;
 	flex-shrink: 0;
@@ -238,9 +240,10 @@ section{
 }
 
 #sectionCampus .campus-item .image{
-	height: 255px;
+	height: 265px;
 	background: #ddd;
-	margin-bottom: 1.2em;
+	margin-bottom: 2em;
+	border-radius: 0.5em;
 }
 
 #sectionCampus .campus-item .image img{
@@ -251,7 +254,8 @@ section{
 }
 
 #sectionCampus .campus-item h3{
-	font-size: 1.25em;
+	font-family: Regular, sans-serif;
+	font-size: 1.55em;
 	line-height: 1.1;
 	margin-bottom: 0.5em;
 	max-width: 90%;
@@ -262,14 +266,14 @@ section{
 }
 
 #sectionCampus .campus-item p{
-	line-height: 1.5;
-	color: #444;
+	line-height: 1.7;
+	color: #555;
 	margin-bottom: 0.8em;
-	font-size: 1.05em;
+	font-size: 1em;
 }
 
 #sectionCampus .campus-item a{
-	
+	letter-spacing: 0.7px;
 }
 
 /*MEDIA QUERIES*/
