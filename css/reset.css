@@ -23,9 +23,15 @@ q:before, q:after{content:'';content:none;}
 table{border-collapse:collapse;border-spacing:0;}
 *{-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;list-style:none;position:relative}
 
-h1, h2, h3, h4, h5, h6{
+h1:not(.unbold),
+h2:not(.unbold),
+h3:not(.unbold),
+h4:not(.unbold),
+h5:not(.unbold),
+h6:not(.unbold) {
 	font-family:SemiBold, sans-serif;
 }
+@font-face{font-family:"Light";src:url("../fonts/Light.ttf");}
 @font-face{font-family:"Regular";src:url("../fonts/Regular.ttf");}
 @font-face{font-family:"SemiBold";src:url("../fonts/SemiBold.ttf");}
 @font-face{font-family:"Bold";src:url("../fonts/Bold.ttf");}

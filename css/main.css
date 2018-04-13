@@ -20,7 +20,8 @@ header{
 }
 
 header #logo{
-	font-size: 1.15em;
+    z-index: 1;
+    padding: 1em 0;
 }
 
 #logoImage{
@@ -33,21 +34,39 @@ header #logo{
 
 #logoImage img{
 	width: 100% !important;
-	height: auto !important;
+    height: auto !important;
+    margin-bottom: 0.5em;
+}
+
+#logoText{
+    font-family: Light, sans-serif;
+    font-size: 1.35em;
+    margin-left: 1em;
+}
+
+nav{
+    height: 70px;
 }
 
 nav a{
-	font-family: SemiBold, sans-serif;
-	height: 70px;
-	padding: 0 1.1em;
+	/* font-family: SemiBold, sans-serif; */
+	/* height: 70px; */
+	padding: 0.9em 1.1em;
 	text-transform: uppercase;
 	font-size: 0.95em;
-	font-size: 1.02em;
-	color: #777;
+    color: #555;
+    min-width: 110px;
+    border-style: solid;
+    border-color: #ddd;
+    /* border-width: 0 1px 0 1px; */
+}
+
+nav a + a{
+    border-left-width: 1px;
 }
 
 nav a.active{
-	font-family: Bold, sans-serif;
+	font-family: SemiBold, sans-serif;
 	color: #003a75;
 }
 
@@ -145,12 +164,12 @@ nav a.active{
 footer{
 	padding-top: 5em;
 	padding-bottom: 2em;
-	background: #000;
-	color: #999;
+	background: #012142;
+	color: #9aaabb;
 }
 
 footer .footer-section h5{
-	color: #fff;
+	color: #e8ecf1;
 	font-size: 1.1em;
 	margin-bottom: 1.3em;
 }
@@ -162,7 +181,7 @@ footer .footer-section p{
 }
 
 footer .footer-section p span{
-	color: #ddd;
+	color: #d0d9e2;
 	margin-right: 0.5em;
 }
 
@@ -174,7 +193,7 @@ footer #copyright{
 	font-size: 0.9em;
 	margin-top: 2em;
 	padding-top: 2em;
-	border-top: 1px solid #252525;
+	border-top: 1px solid #253b52;
 }
 
 footer #copyright a{

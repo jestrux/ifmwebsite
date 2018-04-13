@@ -6,23 +6,26 @@
 }
 
 #banner .text{
-	height: 570px;
+	max-height: 670px;
+	height: calc(100vh - 102px);
 	z-index: 1;
 	color: #fff;
 }
 
 #banner h2{
 	font-family: Black, sans-serif;
+	font-family: Regular, sans-serif;
 	text-align: center;
-	font-size: 3.1em;
-	max-width: 800px;
+	/* font-size: 4em; */
+	font-size: 4vw;
+	max-width: 70%;
 }
 
 #banner h2 span{
-	font-family: Regular, sans-serif;
+	font-family: Light, sans-serif;
 	display: block;
 	font-size: 0.5em;
-	margin-bottom: 0.5em;
+	margin-bottom: 0.1em;
 }
 
 #banner:after{
@@ -145,6 +148,8 @@ section{
 
 #sectionNews{
 	background: #f0f0f0;
+	padding: 6em 0;
+	margin-bottom: -2em;
 }
 
 #sectionNews .section-title{
@@ -155,21 +160,35 @@ section{
 	text-align: center;
 }
 
+#sectionNews .news-item{
+	flex-wrap: wrap;
+	margin-bottom: 3em;
+}
+
 #sectionNews .news-item .image{
-	height: 245px;
+	/* height: 140px; */
 	background: #ddd;
-	margin-bottom: 1em;
+	flex-basis: 40%;
+	flex-shrink: 0;
+}
+
+#sectionNews .news-item .image img{
+	/* width: 100%; */
+}
+
+#sectionNews .news-item .text{
+	/* flex: 1; */
+	padding-left: 1.2em;
+	width: 60%;
+	overflow: hidden;
 }
 
 #sectionNews .news-item h3{
-	font-size: 1.15em;
-	line-height: 1.1;
-	margin-bottom: 0.2em;
+	/* font-family: , sans-serif !important; */
+	font-size: 1.3em;
+	line-height: 1.4;
+	margin-bottom: 0.4em;
 	max-width: 90%;
-	overflow: hidden;
-	white-space: nowrap;
-	-ms-text-overflow: ellipsis;
-	text-overflow: ellipsis;
 }
 
 #sectionNews .news-item p{
@@ -187,6 +206,17 @@ section{
 	background-image: url(../img/cta-join.jpg);
 	background-attachment: fixed;
 	color: #fff;
+}
+
+#ctaJoin span{
+	font-family: Light, sans-serif;
+	font-size: 1.4em;
+	letter-spacing: 2px;
+}
+
+#ctaJoin h5 {
+	margin-top: 0.1em;
+	font-size: 3em;
 }
 
 #ctaJoin .btn{
