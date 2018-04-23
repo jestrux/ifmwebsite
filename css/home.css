@@ -227,8 +227,9 @@ section{
 }
 
 #ctaJoin .btn{
-	background: #4c8aca;
-	color: #fff;
+	/* background: #4c8aca; */
+	background: #fff;
+	color: #333;
 	margin-top: 0.8em;
 }
 
