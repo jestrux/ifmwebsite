@@ -1,0 +1,127 @@
+body {
+	--date-border-color: #3b7dbf;
+	--news-bg-color: #eaebec;
+	--news-text-color: #6a6f73;
+	--course-icon-color: #3b7dbf;
+}
+
+#banner{
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+#banner a{
+	display: block;
+	margin-top: 1.5em;
+	min-width: 220px;
+    border-radius: 50px;
+    padding: 1em 2.6em;
+    background: #fff;
+    color: #0c0b64;
+    text-align: center;
+}
+
+#bannerImage{
+	width: 50%;
+	max-width: 50%;
+	max-height: 370px;
+	overflow: hidden;
+}
+
+#bannerImage img{
+	width: 100%;
+}
+
+#banner .text{
+	min-width: 50%;
+	z-index: 1;
+	color: #fff;
+	background: var(--main-color);
+}
+
+#banner h2{
+	font-family: Black, sans-serif;
+	font-family: Regular, sans-serif;
+	text-align: center;
+	font-size: 3.5vw;
+	max-width: 95%;
+}
+
+#banner h2 span{
+	font-family: Light, sans-serif;
+	display: block;
+	font-size: 0.5em;
+	margin-top: 0.3em;
+}
+
+#sectionCourses{
+	margin: 4.5em 0;
+}
+
+#sectionCourses .section-title + p{
+	font-size: 1.1em;
+	line-height: 1.9;
+	max-width: 95%;
+	margin-bottom: 0.2em;
+}
+
+#sectionCourses .section-title~a {
+	color: var(--main-color);
+}
+
+#courseList .col-md-3{
+	padding: 0;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+#courseList .course-item {
+	text-align: center;
+	margin-bottom: 2em;
+	background: #fff;
+	margin: auto;
+	padding-top: 1.5em;
+	padding-bottom: 2em;
+	border-right: 1px solid #e5e5e5;
+}
+
+/* #courseList .col-md-4:nth-child(1) .course-item, */
+#courseList .col-md-3:nth-child(4n) .course-item {
+	border-right: 0;
+}
+
+#courseList .col-md-3:nth-child(n+5){
+	border-bottom: 0;
+}
+
+#sectionCourses .course-icon {
+	width: 120px;
+	height: 120px;
+	background: var(--course-icon-color);
+	color: #fff;
+	border-radius: 50%;
+	margin-bottom: 0.9em;
+	font-size: 1.48em;
+}
+
+#sectionCourses .course-item h3{
+	margin-bottom: 1em;
+}
+
+#sectionCourses .course-item a{
+	color: var(--main-color);
+}
+#sectionCourses .course-item p{
+	color: #555;
+	font-size: 0.95em;
+	margin-bottom: 1.2em;
+	display: none;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 521px){
+    
+}
+
+@media screen and (max-width: 520px){
+    
+}

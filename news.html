@@ -18,19 +18,23 @@
 	<link rel="stylesheet" href="css/flexboxgrid.min.css">
 	<link rel="stylesheet" href="css/flex.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="css/news.css">
 	<link rel="icon" href="logo.png">
 
 	<style>
-		bodsy{
+		body{
 			--main-color: #0c0b64;
 			--date-border-color: #403ece;
-			--news-bg-color: #ecedff;
-			--news-text-color: #575767;
+			--news-bg-color: #f1f1f1;
+			--news-text-color: #7b7878;
 			--course-icon-color: #4a498e;
 			--footer-bg-color: #0a0938;
 			--footer-text-color: #9595a9;
 			--footer-separator-color: #292950;
+		}
+
+		#banner:after{
+			opacity: 0.6;
 		}
 	</style>
 </head>
@@ -47,114 +51,32 @@
 			</a>
 
 			<nav class="layout center">
-				<a href="#" class="layout center-center active">HOME</a>
-				<!-- <a href="#" class="layout center-center">ABOUT US</a> -->
-				<a href="#" class="layout center-center">ACADEMICS</a>
-				<a href="#" class="layout center-center">STAFF</a>
-				<a href="#" class="layout center-center">NEWS</a>
+				<a href="index.html" class="layout center-center">HOME</a>
+				<a href="academics.html" class="layout center-center">ACADEMICS</a>
+				<a href="staff.html" class="layout center-center">STAFF</a>
+				<a href="#" class="layout center-center active">NEWS</a>
 				<a href="#" class="layout center-center">EVENTS</a>
 				<a href="#" class="layout center-center">CONTACT US</a>
 			</nav>
 		</div>
-	</header
+	</header>
 
 	<main>
-		<div id="banner">
+		<div id="banner" class="layout">
+			<div id="bannerImage">
+				<img src="img/banner.jpg" alt="">
+			</div>
 			<div class="text layout vertical center-center">
 				<h2>
-					<!-- <span>PROVIDING HELP &AMP; GUIDANCE TO</span>
-					THE NEXT BIG WAVE OF<br>FINANCIALLY AWARE YOUTH -->
-					<span>EVEN RIGHT NOW, WE ARE</span>
-					Inspiring a financially <br> aware generation.
+					IFM News
+					<span>Learn what's happening at IFM.</span>
 				</h2>
-
-				<a href="#sectionEvAn" id="bannerScroller" class="layout center-center">
-					<svg fill="#FFFFFF" height="40" width="40" viewBox="0 0 24 24">
-					    <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
-					    <path d="M0-.75h24v24H0z" fill="none"/>
-					</svg>
-				</a>
+				<a href="#">Subscribe to newsletter</a>
 			</div>
 		</div>
 
-		<section id="sectionEvAn">
-			<div class="section-wrapper">
-				<div class="row">
-					<div id="upcomingEvents" class="col-md-8">
-						<h1 class="section-title">UPCOMING EVENTS</h1>
-						
-						<div class="row" style="margin: 0;">
-							<a href="#" class="col-md-6 an-event layout center">
-								<div class="event-date layout vertical center-center">
-									<span class="day">09</span>
-									<span class="month">APR</span>
-								</div>
-								<div class="event-info flex layout vertical">
-									<h3>Block III Classes for IFM Master’s Begin</h3>
-								</div>
-							</a>
-
-							<a href="#" class="col-md-6 an-event layout center">
-								<div class="event-date layout vertical center-center">
-									<span class="day">16</span>
-									<span class="month">APR</span>
-								</div>
-								<div class="event-info flex layout vertical">
-									<h3>Test 1 for undergraduate and post graduate students.</h3>
-									<p>IFM Main Campus</p>
-								</div>
-							</a>
-
-							<a href="#" class="col-md-6 an-event layout center">
-								<div class="event-date layout vertical center-center">
-									<span class="day">26</span>
-									<span class="month">APR</span>
-								</div>
-								<div class="event-info flex layout vertical">
-									<h3>IFM Career Day 2018</h3>
-									<p>From 9AM - IFM Grounds</p>
-								</div>
-							</a>
-
-							<a href="#" class="col-md-6 an-event layout center">
-								<div class="event-date layout vertical center-center">
-									<span class="day">26</span>
-									<span class="month">APR</span>
-								</div>
-								<div class="event-info flex layout vertical">
-									<h3>IFM Career Day 2018</h3>
-									<p>From 9AM - IFM Grounds</p>
-								</div>
-							</a>
-						</div>
-					</div>
-
-					<div id="announcements" class="col-md-4">
-						<h1 class="section-title">ANNOUNCEMENTS</h1>
-
-						<a href="#" class="an-announcement layout center">
-							Download IFM annual Newsletter for 2017.
-						</a>
-
-						<a href="#" class="an-announcement layout center">
-							Electronic payment guidelines.
-						</a>
-
-						<a href="#" class="an-announcement layout center">
-							Click to download 2018/2019 admission forms.
-						</a>
-
-						<a href="#" class="an-announcement layout center">
-							Announcing new course: Certificate of proficiency insurance.
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
-
 		<section id="sectionNews">
 			<div class="section-wrapper">
-				<h1 class="section-title centered">LATEST NEWS</h1>
 				<div class="row">
 					<div class="col-md-6 layout news-item">
 						<div class="image">
@@ -220,96 +142,6 @@
 								</p>
 							</div>
 							<a href="#">Read More >></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="ctaJoin" class="cta">
-		    <div class="text layout vertical center-center">
-				<span>OUR MOTTO</span>
-		        <h5>Jifunze Uhudumie</h5>
-		        <!-- <p>
-		            IFM was built upon the pillar of students gaining knowledge to serve their communities, join us and become an informed citizen.
-		        </p> -->
-		        <a href="#" class="btn">
-		            Become a student
-		        </a>
-		    </div>
-		</section>
-
-		<section id="sectionCourses">
-			<div class="section-wrapper">				
-				<div class="row">
-					<div class="col-md-4">
-						<h1 class="section-title centere">Popular Courses</h1>
-						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores id eum eveniet incidunt quae sunt, vel praesentium culpa eaque, ad ducimus aut odio rerum tenetur excepturi nobis voluptatum libero rem!</p>
-						<br>
-						<a href="#">See all courses &nbsp;>></a>
-					</div>
-
-					<!-- .col-md-8>.row>.col-md-4.course-item*6>.course-image>.course-icon+h3{Bachelor of course $}+p{$, 000 Students so far}+a[href="#"]{Enroll now} -->
-					<div class="col-md-8">
-						<div class="row" id="courseList">
-							<div class="col-md-4">
-								<div class="course-item layout vertical center-center">
-									<div class="course-image layout inline center-center">
-										<div class="course-icon layout center-center">BBF</div>
-									</div>
-									<h3>Bachelor of Banking Finance</h3>
-									<p>5,200 students since 2002</p>
-									<a href="#">Enroll Now</a>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="course-item layout vertical center-center">
-									<div class="course-image layout inline center-center">
-										<div class="course-icon layout center-center">BTX</div>
-									</div>
-									<h3>Bachelor of Taxation</h3>
-									<p>1,200 students since 1998</p>
-									<a href="#">Enroll Now</a>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="course-item layout vertical center-center">
-									<div class="course-image layout inline center-center">
-										<div class="course-icon layout center-center">B.Acc</div>
-									</div>
-									<h3>Bachelor of Accounting</h3>
-									<p>3,000 students since 2000</p>
-									<a href="#">Enroll Now</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>		
-		</section>
-
-		<section id="sectionCampus">
-			<div class="section-wrapper">
-				<h1 class="section-title centered">Campus life at IFM</h1>
-				<div class="row">
-					<div class="col-md-6">
-						<div class="campus-item">
-							<div class="image layout vertical inline center-center">
-								<h3 class="unbold">Main Campus</h3>
-								<a href="#">learn more&nbsp; >></a>
-							</div>
-							<p>
-								Dar es Salaam City Centre, Shaaban Robert Street, opposite the National Museum.
-							</p>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="campus-item">
-							<div class="image layout vertical inline center-center">
-								<h3 class="unbold">Mwanza Campus</h3>
-								<a href="#">learn more&nbsp; >></a>
-							</div>
-							<p>Isamilo area, Machemba Road opposite Sekou Toure Hospital. Walking distance from City centre.</p>
 						</div>
 					</div>
 				</div>
