@@ -24,12 +24,15 @@ body {
 #bannerImage{
 	width: 50%;
 	max-width: 50%;
-	max-height: 370px;
+	height: 370px;
 	overflow: hidden;
 }
 
 #bannerImage img{
 	width: 100%;
+	min-height: 100%;
+	object-fit: cover;
+	object-position: center;
 }
 
 #banner .text{

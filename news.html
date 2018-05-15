@@ -64,7 +64,7 @@
 	<main>
 		<div id="banner" class="layout">
 			<div id="bannerImage">
-				<img src="img/banner.jpg" alt="">
+				<img src="img/news.jpg" alt="">
 			</div>
 			<div class="text layout vertical center-center">
 				<h2>
@@ -78,6 +78,73 @@
 		<section id="sectionNews">
 			<div class="section-wrapper">
 				<div class="row">
+					<div class="col-md-6 layout news-item">
+						<div class="image">
+							<img src="img/news3.jpg" alt="">
+						</div>
+						<div class="text layout vertical justified">
+							<div>
+								<span>February 18th</span>
+								<h3 class="unbold">
+									"Go out, use what you learned here and remember to dream" - Guest of honour 2017 Graduation.
+								</h3 class="unbold">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil officia, doloremque nisi.
+								</p>
+							</div>
+							<a href="#">Read More >></a>
+						</div>
+					</div>
+
+					<div class="col-md-6 layout news-item">
+						<div class="image">
+							<img src="img/news.jpg" alt="">
+						</div>
+						<div class="text layout vertical justified">
+							<div>
+								<span>January 18th</span>
+								<h3 class="unbold">College Expose 2018 concludes with a blazing success.
+								</h3 class="unbold">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil officia, doloremque nisi.
+								</p>
+							</div>
+							<a href="#">Read More >></a>
+						</div>
+					</div>
+
+					<div class="col-md-6 layout news-item">
+						<div class="image">
+							<img src="img/news2.jpg" alt="">
+						</div>
+						<div class="text layout vertical justified">
+							<div>
+								<span>February 18th</span>
+								<h3 class="unbold">
+									IFMSO launches the 'inclusion and togetherness' programme.
+								</h3 class="unbold">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil officia, doloremque nisi.
+								</p>
+							</div>
+							<a href="#">Read More >></a>
+						</div>
+					</div>
+
+					<div class="col-md-6 layout news-item">
+						<div class="image">
+							<img src="img/news4.jpg" alt="">
+						</div>
+						<div class="text layout vertical justified">
+							<div>
+								<span>April 7th</span>
+								<h3 class="unbold">
+									Community Aid: The 2018 tour starts at Mwananyamala orphanage with 30 attendees.
+								</h3 class="unbold">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil officia, doloremque nisi.
+								</p>
+							</div>
+							<a href="#">Read More >></a>
+						</div>
+					</div>
+
 					<div class="col-md-6 layout news-item">
 						<div class="image">
 							<img src="img/soccer.jpg" alt="">
@@ -169,8 +236,16 @@
 			<div class="footer-section for-lg">
 				<h5>QUICK LINKS</h5>
 				<a href="#">About Us</a>
-				<a href="#">FAQs</a>
+				<a href="#">Admission</a>
+				<a href="#">Programmes</a>
+				<a href="#">Brochures</a>
+			</div>
+
+			<div class="footer-section for-lg">
+				<h5>STUDENT LINKS</h5>
+				<a href="#">Announcements</a>
 				<a href="#">Student Code of conduct</a>
+				<a href="#">IFM SIS</a>
 				<a href="#">Almanac</a>
 			</div>
 		</div>
@@ -189,42 +264,5 @@
 	</footer>
 
 	<script src="js/jquery.min.js"></script>
-	<script>
-		$('a[href*="#"]')
-        // Remove links that don't actually link to anything
-            .not('[href="#"]')
-            .not('[href="#0"]')
-            .click(function(event) {
-                // On-page links
-                if (
-                    location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '')
-                    &&
-                    location.hostname === this.hostname
-                ) {
-                    // Figure out element to scroll to
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                    // Does a scroll target exist?
-                    if (target.length) {
-                        // Only prevent default if animation is actually gonna happen
-                        event.preventDefault();
-                        $('html, body').animate({
-                            scrollTop: target.offset().top
-                        }, 1000, function() {
-                            // Callback after animation
-                            // Must change focus!
-                            var $target = $(target);
-                            $target.focus();
-                            if ($target.is(":focus")) { // Checking if the target was focused
-                                return false;
-                            } else {
-                                $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-                                $target.focus(); // Set focus again
-                            };
-                        });
-                    }
-                }
-            });
-	</script>
 </body>
 </html>

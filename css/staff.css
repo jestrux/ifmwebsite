@@ -21,15 +21,18 @@ body {
     text-align: center;
 }
 
-#bannerImage{
+#bannerImage {
 	width: 50%;
 	max-width: 50%;
-	max-height: 370px;
+	height: 370px;
 	overflow: hidden;
 }
 
-#bannerImage img{
+#bannerImage img {
 	width: 100%;
+	min-height: 100%;
+	object-fit: cover;
+	object-position: center;
 }
 
 #banner .text{
@@ -83,6 +86,7 @@ body {
 	/*padding-bottom: 2em;*/
 	background: #f0f0f0;
 	max-width: 320px;
+	min-height: calc(100% - 2.5em);
 	margin-bottom: 2.5em;
 	/*border-right: 1px solid #e5e5e5;*/
 }
@@ -98,12 +102,18 @@ body {
 
 #sectionCourses .staff-image {
 	width: 100%;
-	height: 260px;
+	height: 300px;
 	margin: 0 auto;
 	background: #ccc;
 	color: #fff;
 	margin-bottom: 0.9em;
 	font-size: 1.48em;
+	overflow: hidden;
+}
+
+#sectionCourses .staff-image img{
+	width: 100%;
+	min-height: 100%;
 }
 
 #sectionCourses .staff-item h3{
@@ -117,6 +127,7 @@ body {
 	color: #555;
 	font-size: 0.95em;
 	margin-bottom: 1.6em;
+	max-width: 80%;
 }
 
 /*MEDIA QUERIES*/
