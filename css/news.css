@@ -1,0 +1,128 @@
+body {
+	--date-border-color: #3b7dbf;
+	--news-bg-color: #eaebec;
+	--news-text-color: #6a6f73;
+	--course-icon-color: #3b7dbf;
+}
+
+#banner{
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+#banner a{
+	display: block;
+	margin-top: 1.5em;
+	min-width: 220px;
+    border-radius: 50px;
+    padding: 1em 2.6em;
+    background: #fff;
+    color: #0c0b64;
+    text-align: center;
+}
+
+#bannerImage{
+	width: 50%;
+	max-width: 50%;
+	max-height: 370px;
+	overflow: hidden;
+}
+
+#bannerImage img{
+	width: 100%;
+}
+
+#banner .text{
+	min-width: 50%;
+	z-index: 1;
+	color: #fff;
+	background: var(--main-color);
+}
+
+#banner h2{
+	font-family: Black, sans-serif;
+	font-family: Regular, sans-serif;
+	text-align: center;
+	font-size: 3.5vw;
+	max-width: 95%;
+}
+
+#banner h2 span{
+	font-family: Light, sans-serif;
+	display: block;
+	font-size: 0.5em;
+	margin-top: 0.3em;
+}
+
+#sectionNews{
+	background: var(--news-bg-color);
+	padding: 4.5em 0;
+	margin-bottom: -2em;
+}
+
+#sectionNews .section-title{
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: center;
+}
+
+#sectionNews .news-item{
+	flex-wrap: wrap;
+	margin-bottom: 3em;
+}
+
+#sectionNews .news-item .image{
+	height: 100%;
+	border-radius: 0.25em;
+	background: #ddd;
+	flex-basis: 40%;
+	flex-shrink: 0;
+}
+
+#sectionNews .news-item .image img{
+	/* width: 100%; */
+}
+
+#sectionNews .news-item .text{
+	/* flex: 1; */
+	padding-left: 1.2em;
+	width: 60%;
+	overflow: hidden;
+}
+
+#sectionNews .news-item span{
+	display: block;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	text-transform: uppercase;
+	font-family: 'Light', sans-serif;
+}
+
+#sectionNews .news-item h3{
+	font-size: 1.4em;
+	line-height: 1.2;
+	margin-bottom: 0.4em;
+	max-width: 95%;
+}
+
+#sectionNews .news-item p{
+	line-height: 1.3;
+	color: var(--news-text-color);
+	margin-bottom: 0.5em;
+	max-width: 90%;
+}
+
+#sectionNews .news-item a{
+	color: var(--main-color);
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 521px){
+    
+}
+
+@media screen and (max-width: 520px){
+    
+}
