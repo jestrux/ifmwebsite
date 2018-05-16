@@ -1,0 +1,73 @@
+body {
+	--date-border-color: #3b7dbf;
+	--news-bg-color: #eaebec;
+	--news-text-color: #6a6f73;
+	--course-icon-color: #3b7dbf;
+}
+
+#banner{
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+#banner a{
+	display: block;
+	margin-top: 1.5em;
+	min-width: 220px;
+    border-radius: 50px;
+    padding: 1em 2.6em;
+    background: #fff;
+    color: #0c0b64;
+    text-align: center;
+}
+
+#bannerImage {
+	width: 50%;
+	max-width: 50%;
+	height: 370px;
+	overflow: hidden;
+}
+
+#bannerImage img {
+	width: 100%;
+	min-height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+#banner .text{
+	min-width: 50%;
+	z-index: 1;
+	color: #fff;
+	background: var(--main-color);
+}
+
+#banner h2{
+	font-family: Black, sans-serif;
+	font-family: Regular, sans-serif;
+	text-align: center;
+	font-size: 3.5vw;
+	max-width: 95%;
+}
+
+#banner h2 span{
+	font-family: Light, sans-serif;
+	display: block;
+	font-size: 0.5em;
+	margin-top: 0.3em;
+}
+
+#sectionContacts{
+	margin-top: 4.5em;
+	margin-bottom: 2em;
+	min-height: 20vh
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 521px){
+    
+}
+
+@media screen and (max-width: 520px){
+    
+}
