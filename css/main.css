@@ -125,6 +125,34 @@ nav a.active{
 	object-position: top;
 }
 
+.rounded-btn{
+    display: inline-block;
+    margin-top: 0.9em;
+    min-width: 220px;
+    border-radius: 50px;
+    padding: 1em 2.6em;
+    color: #fff;
+    background: #0c0b64;
+    text-align: center;
+}
+
+.rounded-btn.sm{
+    min-width: 120px;
+    border-radius: 30px;
+    padding: 0.6em 1.6em;
+}
+
+.rounded-btn.white, {
+    color: #0c0b64;
+    background: #fff;
+}
+
+.rounded-btn.border {
+    color: #0c0b64;
+    border: 1px solid #0c0b64;
+    background: transparent;
+}
+
 .cta{
     position: relative;
     background: #ddd;
