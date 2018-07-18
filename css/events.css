@@ -58,9 +58,63 @@ body {
 }
 
 #sectionEvents{
-	margin-top: 4.5em;
-	margin-bottom: 2em;
+	margin-top: 3.5em;
+	margin-bottom: 3em;
 	min-height: 20vh
+}
+
+#sectionEvents .section-wrapper{
+	max-width: 1250px;
+}
+
+.an-event {
+	padding: 0.5em 0;
+	margin-bottom: 1.6em;
+}
+
+.an-event .event-date {
+	flex-shrink: 0;
+	width: 80px;
+	height: 80px;
+	border: 2px solid var(--date-border-color);
+	color: #000;
+	margin-right: 1em;
+	border-radius: 50%;
+	border-left: 0;
+	border-bottom: 0;
+	background: #f6f6fd;
+}
+
+.an-event .event-date span {
+	font-size: 0.9em;
+	display: block;
+}
+
+.an-event .event-date span:first-child {
+	font-size: 1.5em;
+	margin-bottom: 0.2em;
+}
+
+.an-event .event-info {
+	padding: 0.5em 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.an-event h3 {
+	font-size: 1.25em;
+	width: 85%;
+	line-height: 1.3em;
+	/* height: 20px; */
+	/* white-space: nowrap; */
+	/* overflow: hidden; */
+	/* -ms-text-overflow: ellipsis; */
+	/* text-overflow: ellipsis; */
+}
+
+.an-event p {
+	margin-top: 0.5em;
+	color: #444;
 }
 
 /*MEDIA QUERIES*/

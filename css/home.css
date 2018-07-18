@@ -106,7 +106,7 @@ body {
 }
 
 #baseActions:before{
-	bottom: 2.45em;
+	bottom: 2.5em;
 	content: '';
 	z-index: 0;
 	background: #fff;

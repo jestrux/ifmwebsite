@@ -130,5 +130,40 @@
 	</footer>
 
 	<script src="js/jquery.min.js"></script>
+
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClGUi2nojUCAB1c-N1EJqkiBLId1hzx_s&callback=initMap">
+	</script>
+
+	<script>
+		function initMap() {
+			var opt = {
+				minZoom: 17,
+				maxZoom: 17,
+				type: 'satellite',
+				mapTypeControl: false
+			};
+
+			var map1 = new google.maps.Map(document.getElementById('bannerImage'), {
+				zoom: 17,
+				center: {
+					lat: -6.8140,
+					lng: 39.2935
+				}
+			});
+
+			map1.setOptions(opt);
+
+			var image = 'images/marker.png';
+
+			var marker = new google.maps.Marker({
+				position: {
+					lat: -6.8140,
+					lng: 39.2935
+				},
+				map: map1
+			});
+		}
+	</script>
+
 </body>
 </html>
