@@ -1,0 +1,163 @@
+header .section-wrapper {
+	max-width: 1400px;
+	padding: 0 2em;
+	margin: 0 auto;
+}
+
+#logoText {
+	font-size: 2em;
+	margin-left: 0.55em;
+	letter-spacing: 2px;
+}
+
+#logoText small {
+	font-family: Light, sans-serif;
+	font-size: 14px;
+	letter-spacing: 0;
+}
+
+#banner{
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+#banner a{
+	display: block;
+	margin-top: 1.5em;
+	min-width: 220px;
+    border-radius: 50px;
+    padding: 1em 2.6em;
+    background: #fff;
+    color: #0c0b64;
+    text-align: center;
+}
+
+#bannerImage{
+	width: 50%;
+	max-width: 50%;
+	height: 370px;
+	overflow: hidden;
+}
+
+#bannerImage img{
+	width: 100%;
+	min-height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+#banner .text{
+	min-width: 50%;
+	z-index: 1;
+	color: #fff;
+	background: var(--main-color);
+}
+
+#banner h2{
+	font-family: Black, sans-serif;
+	font-family: Regular, sans-serif;
+	text-align: center;
+	font-size: 3.5vw;
+	max-width: 95%;
+}
+
+#banner h2 span{
+	font-family: Light, sans-serif;
+	display: block;
+	font-size: 0.5em;
+	margin-top: 0.3em;
+}
+
+#admissionsPage > .section-wrapper {
+	margin: 3em auto;
+	max-width: 1200px;
+}
+
+#courseForm{
+	background: #f0f0f0;
+	min-height: 300px;
+	width: 400px;
+	margin-right: 2em;
+	padding: 3em 2em;
+}
+
+#courseForm h3{
+	font-size: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+#courseForm label,
+#courseForm select{
+	display: block;
+	width: 100%;
+}
+
+#courseForm select {
+	margin-top: 0.5em;
+	margin-bottom: 1.5em;
+	font-size: 1em;
+	padding: 0.7em;
+	border-radius: 4px;
+	border: 1px solid #ddd;
+}
+
+#courseForm select {
+	background: #fff url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='%23999'><polygon points='0,0 100,0 50,50'/></svg>") no-repeat scroll 96.5% 60%;
+	background-size: 12px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+#courseForm #courseCount{
+	display: none;
+}
+
+#courseForm button{
+	width: 100%;
+	font-size: 0.85em;
+	margin-bottom: 1em;
+}
+
+#admissionContent{
+	margin: auto;
+	padding: 0 2em;
+}
+
+#admissionContent img {
+	height: 460px;
+	width: 100%;
+	background: #ddd;
+	object-fit: cover;
+	object-position: top;
+	margin-bottom: 1em;
+}
+
+#admissionContent h2 {
+	font-family: Light, sans-serif;
+	font-size: 2.8em;
+	line-height: 1.2em;
+	margin-bottom: 0.4em;
+}
+
+#admissionContent h4 {
+	font-size: 1.4em;
+	margin-bottom: 0.4em;
+}
+
+#admissionContent p {
+	font-family: Lato, sans-serif;
+	font-size: 1.05em;
+	line-height: 2em;
+	margin-bottom: 1.5em;
+	color: #555;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 521px){
+    
+}
+
+@media screen and (max-width: 520px){
+    
+}

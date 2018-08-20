@@ -302,6 +302,20 @@ aside li.active a {
 	margin: auto;
 }
 
+#campusContent p{
+	font-family: Light, sans-serif;
+	font-size: 1.4em;
+	line-height: 1.5em;
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+}
+
+#campusContent h4{
+	font-size: 1.25em;
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+}
+
 #campusContent #campusMap{
 	height: 400px;
 	background: #ddd;

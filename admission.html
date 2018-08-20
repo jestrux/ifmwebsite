@@ -18,27 +18,13 @@
 	<link rel="stylesheet" href="css/flexboxgrid.min.css">
 	<link rel="stylesheet" href="css/flex.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/academics.css">
+	<link rel="stylesheet" href="css/admission.css">
 	<link rel="icon" href="logo.png">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.css">
 
 	<style>
-		body{
-			--main-color: #0c0b64;
-			--date-border-color: #403ece;
-			--news-bg-color: #f1f1f1;
-			--news-text-color: #7b7878;
-			--course-icon-color: #4a498e;
-			--course-icon-color: #1a1a71;
-			--footer-bg-color: #0a0938;
-			--footer-text-color: #9595a9;
-			--footer-separator-color: #292950;
-		}
-
-		#banner:after{
-			opacity: 0.6;
-		}
+		
 	</style>
 </head>
 <body class="show-na">
@@ -48,14 +34,16 @@
 				<!-- <span id="logoImage"> -->
 					<img src="img/logo.png" alt="" width="70px;" height="70px">
 				<!-- </span> -->
-				<span id="logoText" href="/" class="layout center">
-					Institute of Finance Management
+				<span id="logoText" href="/" class="layout vertical">
+					IFM
+					<small>Institute of Finance Management</small>
 				</span>
 			</a>
 
 			<nav class="layout center">
 				<a href="index.html" class="layout center-center">HOME</a>
-				<a href="#" class="layout center-center active">ACADEMICS</a>
+				<a href="academics.html" class="layout center-center">ACADEMICS</a>
+				<a href="#" class="layout center-center active">ADMISSIONS</a>
 				<a href="staff.html" class="layout center-center">STAFF</a>
 				<a href="news.html" class="layout center-center">NEWS</a>
 				<a href="events.html" class="layout center-center">EVENTS</a>
@@ -64,45 +52,89 @@
 		</div>
 	</header>
 
-	<main id="academicsPage">
+	<main id="admissionsPage">
 		<div id="banner" class="layout">
 			<div id="bannerImage">
 				<img src="img/campus1.jpg" alt="">
 			</div>
 			<div class="text layout vertical center-center">
 				<h2>
-					Main Campus
-					<span>We make your learning here the most efficient.</span>
+					Join the IFM family
+					<span>
+						Read regulations and requirements before
+						proceeding.
+					</span>
 				</h2>
 			</div>
 		</div>
 
 		<div class="section-wrapper">
-			<div class="layout">
-				<aside>
-					<h3>Academic Units</h3>
-					<ul>
-						<li><a href="academics.html">Faculties</a></li>
-						<li><a href="departments.html">Departments</a></li>
-						<li><a href="directorates.html">Directorates</a></li>
-					</ul>
+			<div class="layout start">
+				<form id="courseForm">
+					<h3>Find Your Course</h3>
 
-					<h3>Campuses</h3>
-					<ul>
-						<li class="active"><a href="#">Main Campus</a></li>
-						<li><a href="campus2.html">Mwanza Centre</a></li>
-					</ul>
+					<label for="level">Education Level</label>
+					<select id="level">
+						<option value="">Pick A Level</option>
+						<option value="1">Undergraduate</option>
+						<option value="2">Postgraduate</option>
+					</select>
 					
-					<h3>Programmes</h3>
-					<ul>
-						<li><a href="programmes.html">Undergraduates</a></li>
-						<li><a href="programmes2.html">Postgraduates</a></li>
-						<li><a href="programmes3.html">Professional Courses</a></li>
-					</ul>
-				</aside>
+					<label for="level">Desired Field</label>
+					<select id="level">
+						<option value="">Pick desired field</option>
+						<option value="1">Finance</option>
+						<option value="2">Taxation</option>
+						<option value="3">Computer / ICT</option>
+						<option value="3">Acturial Sciences</option>
+						<option value="3">Insurance</option>
+						<option value="3">Social Protection</option>
+					</select>
+					
+					<label for="level">Study Mode</label>
+					<select id="level">
+						<option value="">Pick Study Mode</option>
+						<option value="1">Part Time</option>
+						<option value="2">Full Time</option>
+					</select>
 
-				<div id="academicsContent" class="flex">
+					<p id="courseCount">2 Courses Found</p>
+
+					<button class="rounded-btn borde">VIEW COURSES</button>
+				</form>
+
+				<div id="admissionContent" class="flex">
+					<h4>Code of Conduct</h4>
+					<p>
+						We expect the highest level of discipline, friendliness, team work, tolerance and good citizenship from all our students
+						and faculty. This all begins with proper dress code without which you won't be allowed past the IFM gates even in case of 
+						emergencies so please beware. Hate speech, discrimination of any kind, loitering, sexual misconduct and promiscous behavior
+						are strictly prohibited and may result in imidiate termination without refund or prior notice.
+					</p>
+
+					<h4>Certificates Scrutiny</h4>
+					<p>
+						To avoid unnecessary troubles, please make sure you bring all your required certificates as indicatedin your
+						joining instructions. Beware that they will be placed under intense scrutiny so please make sure they are valid.
+						Fake tendered certificates may also be reported to law enforcement organisation and may result in jail time.
+					</p>
+
+					<h4>Fee Beneficiariees</h4>
+					<p>
+						IFM is not affiliated with any fee beneficiariees and will therefore not be responsible to make sure all your affairs are in order.
+						Please make sure you have cleared any queries with your sponsors before you come to the university because any different situation wont
+						be excused by any of our support staff.
+					</p>
 					
+					<h4>Admissions Guidelines</h4>
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam nemo commodi molestiae laboriosam praesentium quos sint tempora facilis dolore porro placeat, excepturi voluptas cupiditate libero rerum similique illo. Molestias, repellat.
+					</p>
+					
+					<h4>Minimum Requirements</h4>
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam nemo commodi molestiae laboriosam praesentium quos sint tempora facilis dolore porro placeat, excepturi voluptas cupiditate libero rerum similique illo. Molestias, repellat.
+					</p>
 				</div>
 			</div>
 		</div>
