@@ -186,6 +186,51 @@ aside li.active a {
 	/* color: var(--course-icon-color); */
 }
 
+#academicsContent > .row > .col-md-4{
+	margin-bottom: 2.2em;
+	padding: 0 0.5em;
+	position: relative;
+}
+
+.course-item{
+	padding: 1.8em 1.4em;
+	border: 1px solid #ddd;
+	min-height: 100%;
+}
+
+.course-item .course-title{
+	min-height: 100px;
+	margin-bottom: 1em;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.course-item h5{
+	font-family: Light, sans-serif;
+	font-size: 1.5em;
+	line-height: 1.2em;
+	margin-bottom: 0.5em;
+}
+
+.course-item small{
+	font-family: Light, sans-serif;
+	display: block;
+	font-size: 0.9em;
+	margin-bottom: 1.2em;
+}
+
+.course-item small span{
+	font-family: Regular, sans-serif;
+	color: var(--main-color);
+}
+
+.course-item p{
+	font-family: Light, sans-serif;
+	line-height: 1.9em;
+	min-height: 120px;
+	color: #333;
+	margin-bottom: 0.1em;
+}
+
 .academic-section .academic-item h3{
 	margin-bottom: 0.5em;
 	font-size: 1.8em;
@@ -209,6 +254,59 @@ aside li.active a {
 	display: none;
 }
 
+#courseContent{
+	margin: auto;
+	max-width: 900px;
+}
+
+#courseContent h4{
+	font-family: Light, sans-serif;
+	font-size: 1.8em;
+	margin-bottom: 0.5em;
+}
+
+#courseContent > small {
+	font-family: Light, sans-serif;
+	display: block;
+	font-size: 0.85em;
+	margin-bottom: 1.2em;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+#courseContent > small span {
+	font-family: Regular, sans-serif;
+	color: var(--main-color);
+}
+
+#courseContent > p{
+	font-family: Lato, sans-serif;
+	font-size: 1.15em;
+	line-height: 1.8em;
+	margin-top: 0.5em;
+	color: #555;
+}
+
+#courseContent>p:first-of-type {
+	margin-top: 1em;
+}
+
+#courseContent h5 {
+	font-size: 1.25em;
+	margin-top: 1.5em;
+	margin-bottom: 0.8em;
+}
+
+.module{
+	padding: 1em 0;
+	padding-right: 1.5em;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+.module h3{
+	
+}
 /*MEDIA QUERIES*/
 @media screen and (min-width: 521px){
     
