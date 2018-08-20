@@ -294,18 +294,58 @@ aside li.active a {
 #courseContent h5 {
 	font-size: 1.25em;
 	margin-top: 1.5em;
-	margin-bottom: 0.8em;
+	margin-bottom: 1em;
 }
 
 .module{
-	padding: 1em 0;
-	padding-right: 1.5em;
 	border-top: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
+	margin-bottom: 2.5em;
 }
 
-.module h3{
-	
+.module label{
+	display: block;
+	position: relative;
+	padding: 1.4em 0.5em;
+	padding-right: 1.5em;
+}
+
+.module label:after {
+	content: "";
+	position: absolute;
+	right: 0.8em;
+	top: 1.6em;
+	width: 16px;
+	height: 16px;
+	background: #fff url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='59.4' height='59.4' fill='%230c0b64'><polygon points='29.7 45.3 0 15.6 1.4 14.1 29.7 42.4 58 14.1 59.4 15.6'/></svg>");
+	background-size: 16px;
+	transition: transform 0.2s ease-out;
+}
+
+.module input:checked + label:after {
+	transform: rotate(180deg);
+}
+
+.module input {
+	display: none;
+}
+
+.module h6{
+	font-family: Light, sans-serif;
+	font-size: 1.45em;
+}
+
+.module p{
+	font-family: Light, sans-serif;
+	line-height: 1.8em;
+	font-size: 1em;
+	color: #555;
+	margin-top: 0.8em;
+	margin-bottom: 0.3em;
+}
+
+.module input:not(:checked) + label p{
+	display: none;
 }
 /*MEDIA QUERIES*/
 @media screen and (min-width: 521px){
