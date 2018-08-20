@@ -22,18 +22,6 @@
 	<link rel="icon" href="logo.png">
 
 	<style>
-		body{
-			--main-color: #0c0b64;
-			--date-border-color: #403ece;
-			--news-bg-color: #f1f1f1;
-			--news-text-color: #7b7878;
-			--course-icon-color: #4a498e;
-			--course-icon-color: #1a1a71;
-			--footer-bg-color: #0a0938;
-			--footer-text-color: #9595a9;
-			--footer-separator-color: #292950;
-		}
-
 		#banner:after{
 			opacity: 0.6;
 		}
@@ -64,77 +52,78 @@
 	</header>
 
 	<main>
-		<div id="banner">
-			<div class="text layout vertical center-center">
-				<h2>
-					<span>EVEN RIGHT NOW, WE ARE</span>
-					Inspiring a financially <br> aware generation.
-				</h2>
-
-				<a href="#sectionEvAn" id="bannerScroller" class="layout center-center">
-					<svg fill="#FFFFFF" height="40" width="40" viewBox="0 0 24 24">
-					    <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
-					    <path d="M0-.75h24v24H0z" fill="none"/>
-					</svg>
-				</a>
+		<div style="position: relative;">
+			<div id="banner">
+				<div class="text layout vertical center-center">
+					<h2>
+						<span>EVEN RIGHT NOW, WE ARE</span>
+						Inspiring a financially <br> aware generation.
+					</h2>
+				</div>
 			</div>
+
+			<section id="baseActionsHolder">
+				<div class="layout">
+					<div class="base-action layout">
+						<span class="icon"></span>
+						<div class="flex text">
+							<h2>Programmes</h2>
+							<p>
+								Click the button below and we'll help you find your course.
+							</p>
+							<a href="#" class="rounded-btn border sm">
+								View Programmes
+							</a>
+						</div>
+					</div>
+					<div class="base-action layout">
+						<span class="icon"></span>
+						<div class="flex text">
+							<h2>Recent Events</h2>
+							<p>
+								Get to know what has been happening all around IFM
+								and more.
+							</p>
+							<a href="events.html" class="rounded-btn border sm">
+								View Events
+							</a>
+						</div>
+					</div>
+					<div class="base-action layout">
+						<span class="icon"></span>
+						<div class="flex text">
+							<h2>Campus Life</h2>
+							<p>
+								All about what it's like to be an IFMer and the 
+								life you can have here.
+							</p>
+							<a href="campus.html" class="rounded-btn border sm">
+								Learn More
+							</a>
+						</div>
+					</div>
+					<div class="base-action layout">
+						<span class="icon"></span>
+						<div class="flex text">
+							<h2>Research & Publications</h2>
+							<p>
+								Learn all about staff research publications 
+								as well as opportunities.
+							</p>
+							<a href="research.html" class="rounded-btn border sm">
+								Learn More
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<a href="#sectionEvAn" id="bannerScroller" class="layout center-center">
+				<svg fill="#FFFFFF" height="40" width="40" viewBox="0 0 24 24">
+					<path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+					<path d="M0-.75h24v24H0z" fill="none"/>
+				</svg>
+			</a>
 		</div>
-
-		<section id="baseActionsHolder">
-			<div class="layout">
-				<div class="base-action layout">
-					<span class="icon"></span>
-					<div class="flex text">
-						<h2>Programmes</h2>
-						<p>
-							Click the button below and we'll help you find your course.
-						</p>
-						<a href="#" class="rounded-btn border sm">
-							Get Started
-						</a>
-					</div>
-				</div>
-				<div class="base-action layout">
-					<span class="icon"></span>
-					<div class="flex text">
-						<h2>Recent Events</h2>
-						<p>
-							Get to know what has been happening all around IFM
-							and more.
-						</p>
-						<a href="#" class="rounded-btn border sm">
-							Get Started
-						</a>
-					</div>
-				</div>
-				<div class="base-action layout">
-					<span class="icon"></span>
-					<div class="flex text">
-						<h2>Campus Life</h2>
-						<p>
-							All about what it's like to be an IFMer and the 
-							life you can have here.
-						</p>
-						<a href="#" class="rounded-btn border sm">
-							Learn More
-						</a>
-					</div>
-				</div>
-				<div class="base-action layout">
-					<span class="icon"></span>
-					<div class="flex text">
-						<h2>Research & Publications</h2>
-						<p>
-							Learn all about staff research publications 
-							as well as opportunities.
-						</p>
-						<a href="#" class="rounded-btn border sm">
-							Learn More
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
 
 		<section id="sectionEvAn">
 			<div class="section-wrapper">
@@ -231,7 +220,7 @@
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil officia, doloremque nisi.
 								</p>
 							</div>
-							<a href="#">Read More >></a>
+							<a href="news_single.html">Read More >></a>
 						</div>
 					</div>
 
@@ -247,7 +236,7 @@
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil officia, doloremque nisi.
 								</p>
 							</div>
-							<a href="#">Read More >></a>
+							<a href="news_single.html">Read More >></a>
 						</div>
 					</div>
 
@@ -264,7 +253,7 @@
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil officia, doloremque nisi.
 								</p>
 							</div>
-							<a href="#">Read More >></a>
+							<a href="news_single.html">Read More >></a>
 						</div>
 					</div>
 
@@ -281,7 +270,7 @@
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil officia, doloremque nisi.
 								</p>
 							</div>
-							<a href="#">Read More >></a>
+							<a href="news_single.html">Read More >></a>
 						</div>
 					</div>
 				</div>
@@ -295,7 +284,7 @@
 		        <!-- <p>
 		            IFM was built upon the pillar of students gaining knowledge to serve their communities, join us and become an informed citizen.
 		        </p> -->
-		        <a href="#" class="btn">
+		        <a href="admission.html" class="btn">
 		            Become a student
 		        </a>
 		    </div>
@@ -308,7 +297,7 @@
 						<h1 class="section-title centere">Popular Courses</h1>
 						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores id eum eveniet incidunt quae sunt, vel praesentium culpa eaque, ad ducimus aut odio rerum tenetur excepturi nobis voluptatum libero rem!</p>
 						<br>
-						<a href="#">See all courses &nbsp;>></a>
+						<a href="programmes.html">See all courses &nbsp;>></a>
 					</div>
 
 					<!-- .col-md-8>.row>.col-md-4.course-item*6>.course-image>.course-icon+h3{Bachelor of course $}+p{$, 000 Students so far}+a[href="#"]{Enroll now} -->
@@ -321,7 +310,7 @@
 									</div>
 									<h3>Bachelor of Banking Finance</h3>
 									<p>5,200 students since 2002</p>
-									<a href="#">Enroll Now</a>
+									<a href="course.html">Enroll Now</a>
 								</div>
 							</div>
 							<div class="col-md-4">
@@ -331,7 +320,7 @@
 									</div>
 									<h3>Bachelor of Taxation</h3>
 									<p>1,200 students since 1998</p>
-									<a href="#">Enroll Now</a>
+									<a href="course.html">Enroll Now</a>
 								</div>
 							</div>
 							<div class="col-md-4">
@@ -341,7 +330,7 @@
 									</div>
 									<h3>Bachelor of Accounting</h3>
 									<p>3,000 students since 2000</p>
-									<a href="#">Enroll Now</a>
+									<a href="course.html">Enroll Now</a>
 								</div>
 							</div>
 						</div>
@@ -358,7 +347,7 @@
 						<div class="campus-item">
 							<div class="image layout vertical inline center-center">
 								<h3 class="unbold">Main Campus</h3>
-								<a href="#">learn more&nbsp; >></a>
+								<a href="campus.html">learn more&nbsp; >></a>
 							</div>
 							<p>
 								Dar es Salaam City Centre, Shaaban Robert Street, opposite the National Museum.
@@ -369,7 +358,7 @@
 						<div class="campus-item">
 							<div class="image layout vertical inline center-center">
 								<h3 class="unbold">Mwanza Campus</h3>
-								<a href="#">learn more&nbsp; >></a>
+								<a href="campus2.html">learn more&nbsp; >></a>
 							</div>
 							<p>Isamilo area, Machemba Road opposite Sekou Toure Hospital. Walking distance from City centre.</p>
 						</div>
@@ -427,9 +416,6 @@
 	</footer>
 
 	<script src="js/jquery.min.js"></script>
-	<script src="js/TweenMax.min.js"></script>
-	<script src="js/sm.min.js"></script>
-	<script src="js/home.js"></script>
 	<script>
 		$('a[href*="#"]')
         // Remove links that don't actually link to anything

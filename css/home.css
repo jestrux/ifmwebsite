@@ -1,8 +1,5 @@
 body {
-	--date-border-color: #3b7dbf;
-	--news-bg-color: #eaebec;
-	--news-text-color: #6a6f73;
-	--course-icon-color: #3b7dbf;
+	
 }
 
 #banner{
@@ -49,19 +46,20 @@ body {
 
 #bannerScroller{
 	position: absolute;
-	right: 0;
+	right: 0.87585em;
 	left: 0;
 	margin: auto;
-	bottom: 3em;
-	width: 50px;
-	height: 50px;
+	bottom: 70px;
+	width: 40px;
+	height: 40px;
 	border-radius: 50%;
-	border: 3px solid #fff;
-	opacity: 0;
+	border: 2px solid #ddd;
+	background: #f4f4f4;
 }
 
 #bannerScroller svg{
 	animation: drop 1.5s infinite;
+	fill: #bbb;
 }
 
 #baseActionsHolder{
@@ -126,8 +124,8 @@ body {
 }
 
 @keyframes drop{
-	50%{
-		transform: translateY(10%);
+	30%{
+		transform: translateY(8%);
 	}
 }
 

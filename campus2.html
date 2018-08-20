@@ -101,8 +101,17 @@
 					</ul>
 				</aside>
 
-				<div id="academicsContent" class="flex">
-					
+				<div id="campusContent" class="flex">
+					<p>
+						Johns Hopkins University is based in Baltimore, but our 10 divisions are spread out across 10 campuses on three continents.
+						We have four Baltimore campuses: Homewood, where our schools of Arts and Sciences, Engineering, and Education are located; East Baltimore, home to our schools of Medicine, Nursing, and Public Health as well as the world-renowned Johns Hopkins Hospital; the Peabody campus, site of the Peabody Institute, the nation’s oldest conservatory; and Harbor East, the waterfront home of the Carey Business School.
+						Our School of Advanced International Studies is based in Washington, D.C., about an hour south of Baltimore, but also has campuses in Italy and China.
+						We have regional satellite campuses in Montgomery County, Maryland, a burgeoning biotech hub north of Washington, D.C.; and in Columbia, Maryland, located just outside Baltimore. And our Applied Physics Laboratory, the nation’s largest university-affiliated research center, is based in nearby Laurel, Maryland.
+					</p>
+
+					<h4>Campus Location</h4>
+
+					<div id="campusMap"></div>
 				</div>
 			</div>
 		</div>
@@ -155,6 +164,38 @@
 		</div>
 	</footer>
 
-	<script src="js/jquery.min.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClGUi2nojUCAB1c-N1EJqkiBLId1hzx_s&callback=initMap">
+	</script>
+
+	<script>
+		function initMap() {
+			var opt = {
+				minZoom: 17,
+				maxZoom: 17,
+				type: 'satellite',
+				mapTypeControl: false
+			};
+			
+			var map2 = new google.maps.Map(document.getElementById('mwanzaMap'), {
+				zoom: 17,
+				center: {lat: -2.5099246436237004, lng: 32.90311708168406}
+			});
+
+			map2.setOptions(opt);
+
+			var marker = new google.maps.Marker({
+				position: {lat: -2.5099246436237004, lng: 32.90311708168406},
+				label: {
+					text: "Institute of Finance Management Mwanza Campus",
+					color: "#5b737f",
+					fontSize: "16px",
+					fontWeight: "normal",
+					width: "60px",
+					letterSpacing: "0.2em"
+				},
+				map: map2
+			});
+		}
+	</script>
 </body>
 </html>

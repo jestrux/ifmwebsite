@@ -297,6 +297,16 @@ aside li.active a {
 	margin-bottom: 1em;
 }
 
+#campusContent {
+	max-width: 800px;
+	margin: auto;
+}
+
+#campusContent #campusMap{
+	height: 400px;
+	background: #ddd;
+}
+
 .module{
 	border-top: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;

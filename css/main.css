@@ -1,8 +1,13 @@
 body{
-    --main-color: #003a75;
-    --footer-bg-color: #012142;
-    --footer-text-color: #9aaabb;
-    --footer-separator-color: #253b52;
+    --main-color: #0c0b64;
+    --date-border-color: #403ece;
+    --news-bg-color: #f1f1f1;
+    --news-text-color: #7b7878;
+    --course-icon-color: #4a498e;
+    --course-icon-color: #1a1a71;
+    --footer-bg-color: #0a0938;
+    --footer-text-color: #9595a9;
+    --footer-separator-color: #292950;
 }
 
 body.show-nav,
@@ -23,6 +28,11 @@ header{
 header #logo{
     z-index: 1;
     padding: 1em 0;
+}
+
+header #logo img{
+    width: 50px !important;
+    height: 50px !important;
 }
 
 #logoImage{
