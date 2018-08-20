@@ -18,8 +18,10 @@
 	<link rel="stylesheet" href="css/flexboxgrid.min.css">
 	<link rel="stylesheet" href="css/flex.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/contacts.css">
+	<link rel="stylesheet" href="css/academics.css">
 	<link rel="icon" href="logo.png">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.css">
 
 	<style>
 		body{
@@ -28,6 +30,7 @@
 			--news-bg-color: #f1f1f1;
 			--news-text-color: #7b7878;
 			--course-icon-color: #4a498e;
+			--course-icon-color: #1a1a71;
 			--footer-bg-color: #0a0938;
 			--footer-text-color: #9595a9;
 			--footer-separator-color: #292950;
@@ -52,60 +55,107 @@
 
 			<nav class="layout center">
 				<a href="index.html" class="layout center-center">HOME</a>
-				<a href="academics.html" class="layout center-center">ACADEMICS</a>
+				<a href="#" class="layout center-center active">ACADEMICS</a>
 				<a href="staff.html" class="layout center-center">STAFF</a>
 				<a href="news.html" class="layout center-center">NEWS</a>
 				<a href="events.html" class="layout center-center">EVENTS</a>
-				<a href="#" class="layout center-center active">CONTACT US</a>
+				<a href="contacts.html" class="layout center-center">CONTACT US</a>
 			</nav>
 		</div>
 	</header>
 
-	<main>
+	<main id="academicsPage">
 		<div id="banner" class="layout">
 			<div id="bannerImage">
-				<img src="img/news.jpg" alt="">
+				<img src="img/academics.jpg" alt="">
 			</div>
 			<div class="text layout vertical center-center">
 				<h2>
-					Contact Us
-					<span>Reach out for any queries or suggestions.</span>
+					Academics at IFM
+					<span>We make your learning here the most efficient.</span>
 				</h2>
-				<!-- <a href="#">Subscribe to newsletter</a> -->
+				<a href="#">Find My Course</a>
 			</div>
 		</div>
 
-		<section id="sectionContacts">
-			<div class="section-wrapper" styl="max-width: 900px">
-				<div class="row">
-					<div class="col-sm-6">
-						<div class="row">
-							<div id="mainMap"class="col-md-7">
-							</div>
-							<div class="col-md-5" style="padding-left: 2em; padding-top: 1em">
-								<h3>Main Campus</h3>
-								<p><span>Phone:</span> +255 98210842</p>
-								<p><span>Email:</span> info@ifm.ac.tz</p>
-								<p><span>Fax:</span> +255 98210842</p>
-							</div>
-						</div>
-					</div>
+		<div class="section-wrapper">
+			<div class="layout">
+				<aside>
+					<h3>Academic Units</h3>
+					<ul>
+						<li><a href="academics.html">Faculties</a></li>
+						<li><a href="departments.html">Departments</a></li>
+						<li><a href="directorates.html">Directorates</a></li>
+					</ul>
 
-					<div class="col-sm-6">
-						<div class="row">
-							<div id="mwanzaMap"class="col-md-7">
-							</div>
-							<div class="col-md-5" style="padding-left: 2em; padding-top: 1em">
-								<h3>Mwanza Center</h3>
-								<p><span>Phone:</span> +255 98210842</p>
-								<p><span>Email:</span> info@ifm.ac.tz</p>
-								<p><span>Fax:</span> +255 98210842</p>
+					<h3>Campuses</h3>
+					<ul>
+						<li><a href="#">Main Campus</a></li>
+						<li><a href="#">Mwanza Centre</a></li>
+					</ul>
+					
+					<h3>Programmes</h3>
+					<ul>
+						<li class="active"><a href="#">Undergraduates</a></li>
+						<li><a href="#">Postgraduartes</a></li>
+						<li><a href="#">Professional Courses</a></li>
+					</ul>
+				</aside>
+
+				<div id="academicsContent" class="flex">
+					<section id="sectionFaculties" class="academic-section">
+						<div class="section-wrapper">
+							<div class="row">
+								<div class="col-md-6 academic-col">
+									<div class="academic-item short layout vertical center-center">
+										<div class="course-image layout inline center-center">
+											<div class="course-icon for-text layout center-center">
+												FABF
+											</div>
+										</div>
+										<h3>Faculty of Accounting Banking &amp; Finance</h3>
+										<a href="#">See departments >></a>
+									</div>
+								</div>
+								<div class="col-md-6 academic-col">
+									<div class="academic-item short greyed layout vertical center-center">
+										<div class="course-image layout inline center-center">
+											<div class="course-icon for-text layout center-center">
+												FCIM
+											</div>
+										</div>
+										<h3>Faculty of Computing Information Systems & Mathematics</h3>
+										<a href="#">See departments >></a>
+									</div>
+								</div>
+								<div class="col-md-6 academic-col">
+									<div class="academic-item short greyed layout vertical center-center">
+										<div class="course-image layout inline center-center">
+											<div class="course-icon for-text layout center-center">
+												FISP
+											</div>
+										</div>
+										<h3>Faculty of Insurance & Social Protection</h3>
+										<a href="#">See departments >></a>
+									</div>
+								</div>
+								<div class="col-md-6 academic-col">
+									<div class="academic-item short layout vertical center-center">
+										<div class="course-image layout inline center-center">
+											<div class="course-icon for-text layout center-center">
+												FEMS
+											</div>
+										</div>
+										<h3>Faculty of Economics &amp; Management Sciences</h3>
+										<a href="#">See departments >></a>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
+					</section>
 				</div>
 			</div>
-		</section>
+		</div>
 	</main>
 
 	<footer>
@@ -156,58 +206,5 @@
 	</footer>
 
 	<script src="js/jquery.min.js"></script>
-
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClGUi2nojUCAB1c-N1EJqkiBLId1hzx_s&callback=initMap">
-	</script>
-
-	<script>
-		function initMap() {
-			var opt = {
-				minZoom: 17,
-				maxZoom: 17,
-				type: 'satellite',
-				mapTypeControl: false
-			};
-
-			var map1 = new google.maps.Map(document.getElementById('mainMap'), {
-				zoom: 17,
-				center: {
-					lat: -6.8140,
-					lng: 39.2935
-				}
-			});
-
-			map1.setOptions(opt);
-
-			var marker = new google.maps.Marker({
-				position: {
-					lat: -6.8140,
-					lng: 39.2935
-				},
-				map: map1
-			});
-			
-			var map2 = new google.maps.Map(document.getElementById('mwanzaMap'), {
-				zoom: 17,
-				center: {lat: -2.5099246436237004, lng: 32.90311708168406}
-			});
-
-			map2.setOptions(opt);
-
-			var marker = new google.maps.Marker({
-				position: {lat: -2.5099246436237004, lng: 32.90311708168406},
-				label: {
-					text: "Institute of Finance Management Mwanza Campus",
-					color: "#5b737f",
-					fontSize: "16px",
-					fontWeight: "normal",
-					width: "60px",
-					letterSpacing: "0.2em"
-				},
-				map: map2
-			});
-		}
-	</script>
-
 </body>
 </html>

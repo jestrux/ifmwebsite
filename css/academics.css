@@ -57,8 +57,53 @@ body {
 	margin-top: 0.3em;
 }
 
+#academicsPage>.section-wrapper {
+	margin: 3em auto;
+}
+
+aside{
+	width: 280px;
+	flex-basis: 280px;
+	flex-shrink: 0;
+	border-right: 1px solid #ddd;
+	padding: 1em;
+}
+
+aside h3{
+	font-size: 1.25em;
+	margin-bottom: 0.8em;
+	color: var(--main-color)
+}
+
+aside ul + h3{
+	margin-top: 1em;
+}
+
+aside ul{
+	padding-left: 1em;
+}
+
+aside li{
+	list-style-type: circle;
+}
+
+aside li a{
+	display: block;
+	padding: 0.8em 0;
+	color: #888;
+}
+
+aside li.active a {
+	color: #000;
+}
+
+#academicsContent{
+	padding: 0 3em;
+	padding-right: 1em;
+}
+
 .academic-section{
-	padding: 4.5em 0;
+	/* padding: 4.5em 0; */
 }
 
 #academicsPage .academic-section:nth-child(2) {

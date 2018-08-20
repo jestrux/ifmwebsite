@@ -15,9 +15,9 @@ body {
 #banner .text{
 	max-height: 670px;
 	height: calc(100vh - 102px);
+	height: calc(100vh - 290px);
 	z-index: 1;
 	color: #fff;
-	padding-bottom: 100px;
 }
 
 #banner h2{
@@ -57,6 +57,7 @@ body {
 	height: 50px;
 	border-radius: 50%;
 	border: 3px solid #fff;
+	opacity: 0;
 }
 
 #bannerScroller svg{
@@ -65,72 +66,35 @@ body {
 
 #baseActionsHolder{
 	background: #f4f4f4;
+	padding: 0;
 }
 
 #baseActions,
 #baseActions:before,
-#baseActionsHolder .layout{
-	padding: 0 2em;
+#baseActionsHolder > .layout{
+	/* padding: 0 2em; */
 	max-width: 1400px;
+	padding: 0;
 	margin: 0 auto;
-}
-
-#baseActions:not(.hidden) + #baseActionsHolder > *{
-	opacity: 0;
-}
-
-#baseActions.hidden:before{
-	transform: scaleX(1.15) translateY(20%);
-	opacity: 0;
-	background: #f8f8f8;
-	box-shadow: none;
-
-	transition: all 0.35s ease-out, 0.5s transform ease-in, 
-	0.25s opacity 0.15s;
-}
-
-#baseActions,
-#baseActions:before {
-	padding: 1.5em 1em;
-	z-index: 10;
-	position: fixed;
-	bottom: 2em;
-	left: 0;
-	right: 0;
-	width: 85vw;
-	border-radius: 3px;
-}
-
-#baseActions.hidden .base-action{
-	opacity: 0;
-	transition: 0.15s opacity ease-out;
-}
-
-#baseActions:before{
-	bottom: 2.5em;
-	content: '';
-	z-index: 0;
-	background: #fff;
-	height: 207px;
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.18);
-
-	transition: 0.25s transform ease-out, 
-	0.25s opacity;
 }
 
 .base-action{
 	flex-shrink: 0;
-	padding: 1.5em;
+	padding: 2.5em 2em;
+	padding-bottom: 2em;
 	position: relative;
 	margin-right: 0.1em;
+	flex-basis: 25%;
+	width: 25%;
+	min-width: 25%;
 	transition: 0.25s opacity ease-out 0.2s;
 }
 
 .base-action:not(:last-child):after{
 	content: '';
-	height: 60px;
+	/* height: 60px; */
 	width: 1px;
-	background: #ccc;
+	background: #e3e3e3;
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -141,13 +105,13 @@ body {
 .base-action h2{
 	color: #0c0b64;
 	font-family: Regular, sans-serif;
-	font-size: 1.7em;
+	font-size: 1.5em;
 	margin-bottom: 0.3em;
 }
 
 .base-action p{
 	font-family: Light, sans-serif;
-	font-size: 1.15em;
+	font-size: 1.05em;
 	line-height: 1.5em;
 	color: #444;
 }
@@ -170,6 +134,10 @@ body {
 section{
 	padding: 4em 0;
 	outline: 0;
+}
+
+#sectionEvAn{
+	padding: 7em 0;
 }
 
 #sectionEvAn:after{

@@ -63,6 +63,22 @@ body {
 	min-height: 20vh
 }
 
+#sectionContacts h3{
+	font-size: 1.45em;
+	margin-bottom: 0.6em;
+}
+
+#sectionContacts p{
+	padding: 0.4em 0;
+	font-size: 1em;
+}
+
+#mainMap, #mwanzaMap{
+	height: 240px;
+	background: #ddd;
+	margin-bottom: 2em;
+}
+
 /*MEDIA QUERIES*/
 @media screen and (min-width: 521px){
     
