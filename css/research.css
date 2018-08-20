@@ -1,0 +1,118 @@
+
+#banner{
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+#banner a{
+	display: block;
+	margin-top: 1.5em;
+	min-width: 220px;
+    border-radius: 50px;
+    padding: 1em 2.6em;
+    background: #fff;
+    color: #0c0b64;
+    text-align: center;
+}
+
+#bannerImage{
+	width: 50%;
+	max-width: 50%;
+	height: 370px;
+	overflow: hidden;
+}
+
+#bannerImage img{
+	width: 100%;
+	min-height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+#banner .text{
+	min-width: 50%;
+	z-index: 1;
+	color: #fff;
+	background: var(--main-color);
+}
+
+#banner h2{
+	font-family: Black, sans-serif;
+	font-family: Regular, sans-serif;
+	text-align: center;
+	font-size: 3.5vw;
+	max-width: 95%;
+}
+
+#banner h2 span{
+	font-family: Light, sans-serif;
+	display: block;
+	font-size: 0.5em;
+	margin-top: 0.3em;
+}
+
+#researchPage>.section-wrapper {
+	margin: 3em auto;
+}
+
+#researchContent{
+	max-width: 900px;
+	margin: auto;
+}
+
+.research-item{
+	margin-bottom: 2.5em;
+}
+
+.research-item img{
+	flex-shrink: 0;
+	flex-basis: 200px;
+	min-width: 200px;
+	height: 250px;
+	margin-right: 2em;
+	background: #ddd;
+	object-fit: cover;
+	object-position: top;
+	filter: grayscale(0.9)
+}
+
+.research-item h3{
+	font-family: Light, sans-serif;
+	font-size: 1.4em;
+	line-height: 1.4em;
+	max-width: 600px;
+	margin-bottom: 0.6em;
+}
+
+.research-item small{
+	font-family: Light, sans-serif;
+}
+
+.research-item strong{
+	font-family: Regular, sans-serif;
+	color: var(--main-color);
+}
+
+.research-item p {
+	font-family: Lato, sans-serif;
+	font-size: 1.05em;
+	line-height: 1.8em;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+	color: #555;
+	max-width: 600px;
+}
+
+.research-item .rounded-btn{
+	border-color: #aaa;
+	color: #555;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 521px){
+    
+}
+
+@media screen and (max-width: 520px){
+    
+}
