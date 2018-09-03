@@ -1,0 +1,253 @@
+body {
+	--date-border-color: #3b7dbf;
+	--news-bg-color: #eaebec;
+	--news-text-color: #6a6f73;
+	--course-icon-color: #3b7dbf;
+}
+
+#rectorWordWrapper{
+	min-height: 400px;
+	max-width: 1000px;
+	padding: 0;
+	padding-top: 4em;
+	padding-bottom: 4em;
+	position: relative;
+}
+
+#rectorWordWrapper:before {
+	content: '';
+	position: absolute;
+	left: -20%;
+	top: -10%;
+	width: 100%;
+	height: 700px;
+	background-size: cover;
+	background-position: top left;
+	background-image: url(../img/speaker2.png);
+
+	transform: scale(0.8)
+}
+
+#rectorWordWrapper h2 {
+	font-family: Black, sans-serif;
+	font-family: Regular, sans-serif;
+	font-size: 2.7em;
+	max-width: 95%;
+	margin-bottom: 0.4em;
+	margin-top: 0.3em;
+	color: var(--main-color);
+}
+
+#rectorWordWrapper p{
+	font-family: Lato,
+	sans-serif;
+	font-size: 1.09em;
+	line-height: 2.1em;
+	margin-bottom: 1.3em;
+	color: #666;
+	/* text-align: justify; */
+}
+
+#rectorImage{
+	display: inline-block;
+	float: left;
+	text-align: center;
+	padding: 0.5em 2em 0.7em 0;
+}
+
+#rectorImage div{
+	display: inline-block;
+	height: 300px;
+	width: 280px;
+	margin-bottom: 0.7em;
+	display: block
+}
+
+#rectorImage span{
+	font-size: 0.85em;
+	color: #777;
+	line-height: 0;
+	display: block;
+	margin-top: 4.2em;
+}
+
+#aboutBoxes{
+	background: var(--main-color);
+	background: #30303a;
+	color: #fff;
+	margin-bottom: 3em;
+}
+
+.box {
+	padding: 4.7% 4%;
+	position: relative;
+	width: 33.333%;
+	overflow: hidden;
+}
+
+.box:last-child {
+	/* width: 100%; */
+	/* margin-bottom: 3%; */
+	padding-right: 0;
+}
+
+.box:not(:last-child) {
+	border-right: 1px solid rgba(48, 47, 93, 0.91);
+	border-color: #414142;
+}
+.box:not(:last-child):after {
+	content: '';
+	margin: auto 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	/* height: 200px; */
+	border-right: 1px solid rgba(48, 47, 93, 0.91);
+	border-color: #505058;
+}
+
+h4 {
+	text-transform: uppercase;
+	letter-spacing: 1.3px;
+	display: inline-block;
+	padding-bottom: 0.6em;
+	margin-bottom: 0.9em;
+	font-size: 1.6em;
+	border-bottom: 2px solid var(--main-color);
+	color: var(--main-color);
+}
+
+.box h4{
+	border-bottom: 1px solid #ecb944;
+	color: #fff;
+	padding-right: 1.5em;
+	margin-bottom: 1.2em;
+	text-transform: uppercase;
+	font-size: 1.3em;
+	letter-spacing: 1.1px;
+	padding-bottom: 0.9em;
+}
+
+.box svg{
+	position: absolute;
+	top: -120px;
+	left: -110px;
+	width: 360px;
+	height: 360px;
+	fill: rgba(95, 95, 95, 0.12);
+	z-index: 0;
+}
+
+.box:first-child{
+	overflow: visible;
+}
+
+.box:first-child svg{
+	fill: rgba(95, 95, 95, 0.13);
+	width: 320px;
+	transform: rotate(60deg);
+}
+
+.box:last-child svg {
+	top: -130px;
+	/* left: -100px; */
+}
+
+.box p,
+.box li {
+	font-family: Lato,
+		sans-serif;
+	font-size: 1.05em;
+	line-height: 1.8em;
+	color: #ccccd8;
+	color: #a4a4a7;
+}
+
+.box ul {
+	padding-left: 20px;
+}
+
+.box li {
+	/* list-style-type: circle; */
+	font-family: Lato, sans-serif;
+	font-size: 1.05em;
+	line-height: 1.5em;
+	margin-bottom: 0.5em;
+	padding-left: 8px;
+	position: relative;
+}
+
+.box li:before{
+	content: '';
+	position: absolute;
+	left: -20px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	border: 1px solid #9b9bc1;
+	border-color: #908a7e;
+}
+
+.staff-item {
+	text-align: center;
+	margin-bottom: 2em;
+	background: #fff;
+	margin: auto;
+	max-width: 320px;
+	min-height: calc(100% - 2.5em);
+	margin-bottom: 2.5em;
+	/*border-right: 1px solid #e5e5e5;*/
+
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+.staff-image {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	margin: 0 auto;
+	color: #fff;
+	margin-bottom: 0.9em;
+	font-size: 1.48em;
+	overflow: hidden;
+}
+
+.staff-image img {
+	background: #ccc;
+	width: 100% !important;
+	height: 100% !important;
+	/* height: 240px; */
+	object-fit: cover;
+	object-position: top center
+}
+
+.staff-item h3 {
+	margin-bottom: 0.4em;
+}
+
+.staff-item p {
+	color: #555;
+	font-size: 0.95em;
+	margin-bottom: 1.6em;
+	max-width: 80%;
+	
+	font-family: Lato, sans-serif;
+	font-size: .85em !important;
+	line-height: 1.5em !important;
+	margin-top: 0.3em;
+	color: #555;
+}
+/*MEDIA QUERIES*/
+@media screen and (min-width: 521px){
+    
+}
+
+@media screen and (max-width: 520px){
+    
+}

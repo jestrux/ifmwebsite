@@ -6,7 +6,21 @@ body {
 	/*border-bottom: 1px solid #ddd;*/
 	-webkit-background-size: cover;
 	background-size: cover;
-	background-image: url(../img/banner.jpg);
+	background: #6b6bab;
+	/* background-color: var(--main-color); */
+	/* background-image: url(../img/banner.jpg); */
+}
+
+#banner img{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top;
+	mix-blend-mode: multiply;
+	/* filter: grayscale(100%) */
 }
 
 #banner .text{
@@ -66,7 +80,7 @@ body {
 }
 
 #banner:after{
-	content: "";
+	/* content: ""; */
 	position: absolute;
 	top: 0;
 	left: 0;
