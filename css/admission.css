@@ -1,20 +1,8 @@
-header .section-wrapper {
+/* header .section-wrapper {
 	max-width: 1400px;
 	padding: 0 2em;
 	margin: 0 auto;
-}
-
-#logoText {
-	font-size: 2em;
-	margin-left: 0.55em;
-	letter-spacing: 2px;
-}
-
-#logoText small {
-	font-family: Light, sans-serif;
-	font-size: 14px;
-	letter-spacing: 0;
-}
+} */
 
 #banner{
 	-webkit-background-size: cover;

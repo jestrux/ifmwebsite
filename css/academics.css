@@ -232,11 +232,18 @@ aside li.active a {
 	margin-bottom: 0.1em;
 }
 
+.course-item a{
+	margin-top: 8px;
+	margin-bottom: 8px;
+	border-color: #7e7e8e !important;
+	color: #656573 !important;
+	font-size: 0.8em;
+	letter-spacing: 0.04em;
+}
+
 .course-item a:not(.rounded-btn){
 	text-transform: uppercase;
 	display: block;
-	margin-top: 16px;
-	margin-bottom: 8px;
 	font-size: 0.8em;
 	letter-spacing: 0.1em;
 }
@@ -275,7 +282,7 @@ aside li.active a {
 	margin-bottom: 0.5em;
 }
 
-#courseContent > small {
+#courseContent small {
 	font-family: Light, sans-serif;
 	display: block;
 	font-size: 0.85em;
@@ -284,7 +291,7 @@ aside li.active a {
 	letter-spacing: 0.05em;
 }
 
-#courseContent > small span {
+#courseContent small span {
 	font-family: Regular, sans-serif;
 	color: var(--main-color);
 }

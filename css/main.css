@@ -51,7 +51,7 @@ header #logo img{
 
 #logoText{
     font-family: Light, sans-serif;
-    font-size: 1.05em;
+    font-size: 1.2em;
     margin-left: 1em;
 }
 
@@ -156,6 +156,12 @@ nav a.active{
     min-width: 120px;
     border-radius: 30px;
     padding: 0.6em 1.6em;
+}
+
+.rounded-btn.xs{
+    min-width: 90px;
+    padding: 0.7em 1.3em;
+    font-size: 0.8em;
 }
 
 .rounded-btn.white {
