@@ -186,7 +186,8 @@ aside li.active a {
 	/* color: var(--course-icon-color); */
 }
 
-#academicsContent > .row > .col-md-4{
+#academicsContent > .row > .col-md-4,
+#academicsContent > .row > .col-md-3{
 	margin-bottom: 2.2em;
 	padding: 0 0.5em;
 	position: relative;
@@ -229,6 +230,15 @@ aside li.active a {
 	min-height: 120px;
 	color: #333;
 	margin-bottom: 0.1em;
+}
+
+.course-item a:not(.rounded-btn){
+	text-transform: uppercase;
+	display: block;
+	margin-top: 16px;
+	margin-bottom: 8px;
+	font-size: 0.8em;
+	letter-spacing: 0.1em;
 }
 
 .academic-section .academic-item h3{

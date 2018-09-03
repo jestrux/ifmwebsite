@@ -24,6 +24,7 @@ body {
 	/* font-size: 4em; */
 	font-size: 4vw;
 	max-width: 70%;
+	margin-bottom: 0.2em;
 }
 
 #banner h2 span{
@@ -33,6 +34,37 @@ body {
 	margin-bottom: 0.1em;
 }
 
+#banner .rounded-btn{
+	text-transform: uppercase;
+	font-size: 0.9em;
+	line-height: 0;
+	padding: 0.9em 2.4em;
+	padding-top: 1.1em;
+	letter-spacing: 0.03em;
+	display: flex;
+	align-items: center;
+}
+
+#banner svg{
+	width: 24px;
+	height: 24px;
+	fill: #fff;
+}
+
+#banner .rounded-btn{
+	background: #201f92;
+}
+
+#banner .rounded-btn:hover svg{
+	animation: point 1.5s infinite;
+}
+
+@keyframes point {
+	30% {
+		transform: translateX(18%);
+	}
+}
+
 #banner:after{
 	content: "";
 	position: absolute;
@@ -40,7 +72,7 @@ body {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	opacity: 0.8;
+	opacity: 0.6;
 	background: var(--main-color);
 }
 
@@ -58,8 +90,14 @@ body {
 }
 
 #bannerScroller svg{
-	animation: drop 1.5s infinite;
-	fill: #bbb;
+	animation: drop 0.8s infinite;
+	fill: #888;
+}
+
+@keyframes drop {
+	50% {
+		transform: translateY(12%);
+	}
 }
 
 #baseActionsHolder{
@@ -93,6 +131,7 @@ body {
 	/* height: 60px; */
 	width: 1px;
 	background: #e3e3e3;
+	background: #e2e2e2;
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -115,18 +154,14 @@ body {
 }
 
 .base-action .rounded-btn{
+	padding: 0.6em 2em;
+	padding-top: 0.65em;
 	transition: all 0.35s ease-out;
 }
 
 .base-action .rounded-btn:not(:hover) {
 	border-color: rgba(12, 11, 100, 0.4);
 	color: rgba(12, 11, 100, 0.7);
-}
-
-@keyframes drop{
-	30%{
-		transform: translateY(8%);
-	}
 }
 
 section{

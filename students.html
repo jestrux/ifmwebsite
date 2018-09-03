@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>IFM</title>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="theme-color" content="#003a75">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#003a75">
+	<meta name="theme-color" content="#003a75">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#003a75">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="IFM Staff">
+
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/flexboxgrid.min.css">
+	<link rel="stylesheet" href="css/flex.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/academics.css">
+	<link rel="icon" href="logo.png">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.css">
+
+	<style>
+		body {
+			--main-color: #0c0b64;
+			--date-border-color: #403ece;
+			--news-bg-color: #f1f1f1;
+			--news-text-color: #7b7878;
+			--course-icon-color: #4a498e;
+			--course-icon-color: #1a1a71;
+			--footer-bg-color: #0a0938;
+			--footer-text-color: #9595a9;
+			--footer-separator-color: #292950;
+		}
+
+		#banner:after {
+			opacity: 0.6;
+		}
+	</style>
+</head>
+
+<body class="show-na">
+	<header class="for-lg">
+		<div class="layout center justified section-wrapper">
+			<a id="logo" href="/" class="layout vertica center">
+				<!-- <span id="logoImage"> -->
+				<img src="img/logo.png" alt="" width="70px;" height="70px">
+				<!-- </span> -->
+				<span id="logoText" href="/" class="layout center">
+					Institute of Finance Management
+				</span>
+			</a>
+
+			<nav class="layout center for-lg">
+				<a href="#" class="layout center-center">HOME</a>
+				<a href="#" class="layout center-center">ABOUT US</a>
+				<a href="academics.html" class="layout center-center">ACADEMICS</a>
+				<a href="staff.html" class="layout center-center">STAFF</a>
+				<a href="research.html" class="layout center-center">RESEARCH</a>
+				<a href="news.html" class="layout center-center">NEWS &nbsp; &amp; &nbsp; EVENTS</a>
+				<a href="contacts.html" class="layout center-center">CONTACT US</a>
+			</nav>
+		</div>
+	</header>
+
+	<main id="academicsPage">
+		<style>
+			.info-box{
+				background: var(--main-color); 
+				padding: 2em;
+				color: #fff;
+			}
+			
+			.info-box h3{
+				color: #fff;
+				line-height: 1.5em;
+			}
+			
+			.info-box a{
+				display: block;
+				padding: 0.8em 0;
+				color: #babac7;
+			}
+
+			.course-item{
+				padding: 0;
+			}
+
+			.course-item .course-title{
+				min-height: 60px;
+				padding-top: 1.5em;
+				padding-bottom: 0.5em;
+				padding-bottom: 0;
+				margin: 0 1.5em;
+				border: none;
+			}
+
+			.course-title h5{
+				font-size: 1.3em;
+			}
+
+			.course-item ul{
+				padding: 1.5em;
+				padding-top: 0;
+				padding-left: calc(20px + 1.5em);
+				margin-bottom: 1em;
+			}
+
+			.course-item li{
+				list-style-type: circle;
+			}
+
+			.course-image{
+				background: #ddd;
+				height: 160px;
+				overflow: hidden;
+			}
+			
+			.course-image img{
+				min-width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center;
+			}
+			
+			.course-item a:not(.rounded-btn){
+				text-transform: none;
+				color: #666;
+				font-family: 'Regular', sans-serif;
+				font-size: 0.95em;
+				margin: 0;
+				padding: 0.5em 0;
+				letter-spacing: 0;
+				text-decoration: underline;
+				color: #3f3f73;
+			}
+		</style>
+		<div class="section-wrapper">
+			<div class="layout">
+				<aside style="border: none; padding-top: 0; flex-basis: 320px;">
+					<div class="info-box">
+						<h3>New Students</h3>
+						<a href="#">Joining Instructions</a>
+						<a href="#">Online Registration</a>
+						<a href="#">Academic Calendar</a>
+						<a href="#">Orientation Timetable</a>
+						<a href="#">HELSB Consultation</a>
+						<a href="#">Campus Mini Map</a>
+					</div>
+					<br>
+
+					<div class="info-box">
+						<h3>Important Links &amp; Documents</h3>
+						<a href="#">IFM SIS</a>
+						<a href="#">Almanac 2018/2019</a>
+						<a href="#">Bank A/C Numbers</a>
+						<a href="#">Revised Exam Regulations</a>
+						<a href="#">Code of Conduct</a>
+						<a href="#">Academic Advisors</a>
+						<a href="#">New Class Locations</a>
+						<a href="#">Hostel Request Form</a>
+					</div>
+				</aside>
+
+				<div id="academicsContent" class="flex" style="padding-right: 0">
+					<div class="row layout">
+						<div class="col-md-4">
+							<div class="course-item layout vertical">
+								<div class="course-image">
+									<img src="img/campuslife.jpg" alt="">
+								</div>
+								<div class="course-title">
+									<h5>Your Life Campus Life</h5>
+								</div>
+								<ul>
+									<li><a href="#">Accommodations</a></li>
+									<li><a href="#">Transport</a></li>
+									<li><a href="#">Classroom Usage</a></li>
+									<li><a href="#">Free Campus Wifi</a></li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="col-md-4">
+							<div class="course-item layout vertical">
+								<div class="course-image">
+									<img src="img/library.jpg" alt="">
+								</div>
+								<div class="course-title">
+									<h5>Your Study Resources</h5>
+								</div>
+								<ul>
+									<li><a href="#">Academic Calendar</a></li>
+									<li><a href="#">Library Services</a></li>
+									<li><a href="#">Academic Support</a></li>
+									<li><a href="#">Computer / IT Services</a></li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="col-md-4">
+							<div class="course-item layout vertical">
+								<div class="course-image">
+									<img src="img/extracurs.JPG" alt="">
+								</div>
+								<div class="course-title">
+									<h5>Your Extracurriculars</h5>
+								</div>
+								<ul>
+									<li><a href="#">Sports &amp; Enterteinment</a></li>
+									<li><a href="#">Clubs &amp; Societies</a></li>
+									<li><a href="#">Students Union (IFMSO)</a></li>
+									<li><a href="#">Community Reachout</a></li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="col-md-4">
+							<div class="course-item layout vertical">
+								<div class="course-image">
+									<img src="img/freshman.jpg" alt="">
+								</div>
+								<div class="course-title">
+									<h5>Your First Year At IFM</h5>
+								</div>
+								<ul>
+									<li><a href="#">ID Card Acquisition</a></li>
+									<li><a href="#">Using IFM SIS</a></li>
+									<li><a href="#">Find your way around</a></li>
+									<li><a href="#">Personal Growth</a></li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="col-md-4">
+							<div class="course-item layout vertical">
+								<div class="course-image">
+									<img src="img/health.jpg" alt="">
+								</div>
+								<div class="course-title">
+									<h5>Your Health &amp; Wellbeing</h5>
+								</div>
+								<ul>
+									<li><a href="#">Counselling</a></li>
+									<li><a href="#">NHIF Cards</a></li>
+									<li><a href="#">Healthy Studying</a></li>
+									<li><a href="#">Student Health Center</a></li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="col-md-4">
+							<div class="course-item layout vertical">
+								<div class="course-image">
+									<img src="img/alumni.jpg" alt="">
+								</div>
+								<div class="course-title">
+									<h5>Your Life after IFM</h5>
+								</div>
+								<ul>
+									<li><a href="#">Alumni Programme</a></li>
+									<li><a href="#">Jobs At IFM</a></li>
+									<li><a href="#">Career Development</a></li>
+									<li><a href="#">Life Coaching</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div class="section-wrapper layout justified">
+			<div class="footer-section">
+				<h5>CONTACTS</h5>
+				<p>
+					<span>PHONE:</span> +255 98210842</p>
+				<p>
+					<span>EMAIL:</span> info@ifm.ac.tz</p>
+				<p>
+					<span>FAX:</span> +255 98210842</p>
+			</div>
+
+			<div class="footer-section for-lg">
+				<h5>SITE LINKS</h5>
+				<a href="#">Home</a>
+				<a href="#">Academics</a>
+				<a href="#">News</a>
+				<a href="#">Events</a>
+			</div>
+
+			<div class="footer-section for-lg">
+				<h5>QUICK LINKS</h5>
+				<a href="#">About Us</a>
+				<a href="#">Admission</a>
+				<a href="#">Programmes</a>
+				<a href="#">Brochures</a>
+			</div>
+
+			<div class="footer-section for-lg">
+				<h5>STUDENT LINKS</h5>
+				<a href="#">Announcements</a>
+				<a href="#">Student Code of conduct</a>
+				<a href="#">IFM SIS</a>
+				<a href="#">Almanac</a>
+			</div>
+		</div>
+
+		<div class="section-wrapper" style="max-width: 1300px !important">
+			<div id="copyright" class="section-wrapper layout justified">
+				<span>Copyright &copy; 2018 Institute of Finance Management</span>
+
+				<div class="layout center justified for-lg">
+					<a href="#">Privacy</a>
+					<a href="#">Site Map</a>
+					<a href="#">Terms &amp; Conditions</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/jquery.min.js"></script>
+</body>
+
+</html>
