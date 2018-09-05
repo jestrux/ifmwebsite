@@ -2,6 +2,11 @@ body {
 	
 }
 
+.section-title {
+	font-family: Bold, sans-serif !important;
+	font-size: 20px;
+}
+
 #banner{
 	/*border-bottom: 1px solid #ddd;*/
 	-webkit-background-size: cover;
@@ -26,7 +31,7 @@ body {
 #banner .text{
 	max-height: 670px;
 	height: calc(100vh - 102px);
-	height: calc(100vh - 290px);
+	height: calc(100vh - 285px);
 	z-index: 1;
 	color: #fff;
 }
@@ -101,6 +106,7 @@ body {
 	border-radius: 50%;
 	border: 2px solid #d0d0d0;
 	background: #f4f4f4;
+	z-index: 2;
 }
 
 #bannerScroller svg{
@@ -117,6 +123,10 @@ body {
 #baseActionsHolder{
 	background: #f4f4f4;
 	padding: 0;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+	z-index: 2;
+	position: relative;
+	/* margin-bottom: 0.1em; */
 }
 
 #baseActions,
@@ -183,25 +193,56 @@ section{
 }
 
 #sectionEvAn{
-	padding: 7em 0;
+	padding: 3.5em 0;
+	background: #ddd;
+	overflow: hidden;
 }
 
+#sectionEvAn:before,
 #sectionEvAn:after{
 	content: "";
 	width: 30%;
 	position: absolute;
 	left: 0;
-	right: 0;
-	bottom: 0.2em;
-	margin: auto;
-	height: 1px;
-	background: #ddd;
-	display: none;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: #fff;
+}
+
+#sectionEvAn:before{
+	/* background-attachment: fixed; */
+	background-image: url(../img/news2.jpg);
+	background-position: bottom;
+	background-size: cover;
+	z-index: 0;
+	filter: blur(3px) grayscale(100%);
+	z-index: 0;
+}
+
+#sectionEvAn:after{
+	z-index: 1;
+	opacity: 0.9;
+}
+
+#sectionEvAn > *{
+	z-index: 2;
 }
 
 .an-event{
 	padding: 0.5em 0;
 	margin-bottom: 1.2em;
+	position: relative;
+}
+
+.an-event:after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 96px;
+	height: 1px;
+	width: calc(92% - 96px);
+	background: #cdcdcd;
 }
 
 .an-event .event-date{
@@ -249,13 +290,14 @@ section{
 
 #announcements{
 	padding: 1em 0;
-	padding-left: 2.2em;
-	border-left: 1px solid #ddd;
+	padding-left: 2.8em;
+	border-left: 1px solid #ccc;
 }
 
 #announcements .section-title{
 	/* font-size: 1.3em; */
 	/* min-height: 35px; */
+	font-family: Bold, sans-serif !important;
 }
 
 .an-announcement{
@@ -265,14 +307,14 @@ section{
 	font-family: Light, sans-serif;
 	text-decoration: underline;
 	text-underline-position: under;
-	text-decoration-color: #eee;
+	text-decoration-color: #ccc;
 	line-height: 1.55em;
 
 	transition: all 0.25s ease-out;
 }
 
 .an-announcement:hover {
-	text-decoration-color: rgba(12, 11, 100, 0.25);
+	text-decoration-color: #999;
 }
 
 .an-announcement:before{
@@ -289,11 +331,15 @@ section{
 }
 
 .an-announcement:hover:before{
-	border: 2px solid rgba(12, 11, 100, 0.6);
+	border: 2px solid #777;
 }
 
 #sectionNews{
+	position: relative;
+	z-index: 2;
+	box-shadow: 0 -1.5px 3px rgba(0, 0, 0, 0.15);
 	background: var(--news-bg-color);
+	background: #f4f4f4;
 	padding: 6em 0;
 	margin-bottom: -2em;
 }
@@ -475,6 +521,7 @@ section{
 	color: #fff;
 	font-size: 3em;
 	font-family: Light !important;
+	letter-spacing: 0;
 }
 
 #sectionCampus .campus-item{
