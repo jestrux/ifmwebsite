@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>IFM</title>
 	<meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="#003a75">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#003a75">
-    <meta name="theme-color" content="#003a75">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#003a75">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="author" content="IFM Staff">
+	<meta name="theme-color" content="#003a75">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#003a75">
+	<meta name="theme-color" content="#003a75">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#003a75">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="IFM Staff">
 
 
 	<link rel="stylesheet" href="css/reset.css">
@@ -22,59 +23,166 @@
 	<link rel="icon" href="logo.png">
 
 	<style>
-		bodsy{
-			--main-color: #0c0b64;
-			--date-border-color: #403ece;
-			--news-bg-color: #ecedff;
-			--news-text-color: #575767;
-			--course-icon-color: #4a498e;
-			--footer-bg-color: #0a0938;
-			--footer-text-color: #9595a9;
-			--footer-separator-color: #292950;
+		#banner:after {
+			opacity: 0.6;
+		}
+
+		header{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			border-bottom: none;
+			background: transparent;
+		}
+
+		#logoImage{
+			background: #fff;
+		}
+		
+		header #logo img{
+			width: 100% !important;
+			height: 100% !important;
+		}
+
+		#logoText{
+			color: #fff;
+			font-family: Tahoma;
+			font-weight: bolder;
+			font-size: 1.6em;
+			letter-spacing: 0.15em;
+			margin-left: 0.55em;
+			line-height: 0;
+		}
+
+		nav a {
+			color: rgba(197, 195, 218, 0.95);
+			border-color: rgba(113, 113, 113, 0.38);
+			/* border: none; */
+		}
+		
+		nav a.active {
+			color: #fff;
+		}
+
+		#banner{
+			padding-top: 75px;
+		}
+
+		.base-action:last-child{
+			padding-right: 1.9em;
 		}
 	</style>
 </head>
+
 <body class="show-na">
 	<header class="for-lg">
 		<div class="layout center justified section-wrapper">
-			<a id="logo" href="/" class="layout vertica center">
-				<!-- <span id="logoImage"> -->
-					<img src="img/logo.png" alt="" width="70px;" height="70px">
-				<!-- </span> -->
+			<a id="logo" href="#" class="layout vertica center">
+				<span id="logoImage">
+					<img src="img/logo.png" alt="">
+				</span>
 				<span id="logoText" href="/" class="layout center">
-					Institute of Finance Management
+					IFM
 				</span>
 			</a>
 
-			<nav class="layout center">
+			<nav class="layout center for-lg">
 				<a href="#" class="layout center-center active">HOME</a>
-				<!-- <a href="#" class="layout center-center">ABOUT US</a> -->
-				<a href="#" class="layout center-center">ACADEMICS</a>
-				<a href="#" class="layout center-center">STAFF</a>
-				<a href="#" class="layout center-center">NEWS</a>
-				<a href="#" class="layout center-center">EVENTS</a>
-				<a href="#" class="layout center-center">CONTACT US</a>
+				<a href="about.html" class="layout center-center">ABOUT US</a>
+				<a href="academics.html" class="layout center-center">ACADEMICS</a>
+				<a href="staff.html" class="layout center-center">STAFF</a>
+				<a href="research.html" class="layout center-center">RESEARCH</a>
+				<a href="news.html" class="layout center-center">NEWS &nbsp; &amp; &nbsp; EVENTS</a>
+				<a href="contacts.html" class="layout center-center">CONTACT US</a>
 			</nav>
 		</div>
-	</header
+	</header>
 
 	<main>
-		<div id="banner">
-			<div class="text layout vertical center-center">
-				<h2>
-					<!-- <span>PROVIDING HELP &AMP; GUIDANCE TO</span>
-					THE NEXT BIG WAVE OF<br>FINANCIALLY AWARE YOUTH -->
-					<span>EVEN RIGHT NOW, WE ARE</span>
-					Inspiring a financially <br> aware generation.
-				</h2>
+		<div style="position: relative;">
+			<div id="banner">
+				<img src="img/banner.jpg" alt="">
+				<div class="text layout vertical center-center">
+					<h2>
+						<span>EVEN RIGHT NOW, WE ARE</span>
+						Inspiring a financially <br> aware generation.
+					</h2>
 
-				<a href="#sectionEvAn" id="bannerScroller" class="layout center-center">
-					<svg fill="#FFFFFF" height="40" width="40" viewBox="0 0 24 24">
-					    <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
-					    <path d="M0-.75h24v24H0z" fill="none"/>
-					</svg>
-				</a>
+					<a href="admission.html" class="rounded-btn">
+						&nbsp;Become a student &nbsp;&nbsp;
+						<svg viewBox="0 0 50 50">
+							<path d="M 29.84375 13.09375 C 29.46875 13.160156 29.167969 13.433594 29.0625 13.796875 C 28.957031 14.164063 29.066406 14.554688 29.34375 14.8125 L 38.53125 24 L 9 24 C 8.96875 24 8.9375 24 8.90625 24 C 8.355469 24.027344 7.925781 24.496094 7.953125 25.046875 C 7.980469 25.597656 8.449219 26.027344 9 26 L 38.53125 26 L 29.34375 35.1875 C 29.046875 35.429688 28.910156 35.816406 28.996094 36.191406 C 29.082031 36.5625 29.375 36.855469 29.746094 36.941406 C 30.121094 37.027344 30.507813 36.890625 30.75 36.59375 L 41.65625 25.71875 L 42.34375 25 L 41.65625 24.28125 L 30.75 13.40625 C 30.542969 13.183594 30.242188 13.070313 29.9375 13.09375 C 29.90625 13.09375 29.875 13.09375 29.84375 13.09375 Z "></path>
+						</svg>
+					</a>
+				</div>
 			</div>
+
+			<section id="baseActionsHolder">
+				<div class="layout">
+					<div class="base-action layout">
+						<span class="icon"></span>
+						<div class="flex text">
+							<h2>Programmes</h2>
+							<p>
+								Pertinent, market ready courses,
+								click the button to find one that suits you.
+							</p>
+							<a href="admission.html" class="rounded-btn border sm">
+								Find A Course
+							</a>
+						</div>
+					</div>
+					<div class="base-action layout">
+						<span class="icon"></span>
+						<div class="flex text">
+							<h2>Student Life &amp; Resources</h2>
+							<p>
+								What it's like to be an 'ifmer' and the resources we
+								provide our students.
+							</p>
+							<a href="students.html" class="rounded-btn border sm">
+								Learn More
+							</a>
+						</div>
+					</div>
+					<div class="base-action layout">
+						<span class="icon"></span>
+						<div class="flex text">
+							<h2>Recent Events</h2>
+							<p>
+								Get to know what has been happening all around IFM
+								and more.
+							</p>
+							<a href="events.html" class="rounded-btn border sm">
+								View Events
+							</a>
+						</div>
+					</div>
+					<div class="base-action layout">
+						<span class="icon"></span>
+						<div class="flex text">
+							<h2>Research & Publications</h2>
+							<p>
+								Learn all about staff research publications
+								as well as opportunities.
+							</p>
+							<a href="research.html" class="rounded-btn border sm">
+								Learn More
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<a href="#sectionEvAn" id="bannerScroller" class="layout center-center">
+				<svg viewBox="0 0 50 50" height="18" width="18">
+					<path d="M 44.988281 13.984375 C 44.726563 13.992188 44.476563 14.101563 44.292969 14.292969 L 25 33.585938 L 5.707031 14.292969 C 5.519531 14.097656 5.261719 13.992188 4.992188 13.988281 C 4.582031 13.992188 4.21875 14.238281 4.0625 14.613281 C 3.910156 14.992188 4 15.421875 4.292969 15.707031 L 24.292969 35.707031 C 24.683594 36.097656 25.316406 36.097656 25.707031 35.707031 L 45.707031 15.707031 C 46.003906 15.421875 46.09375 14.980469 45.9375 14.601563 C 45.777344 14.222656 45.402344 13.976563 44.988281 13.984375 Z " />
+				</svg>
+				<!-- <svg fill="#FFFFFF" height="40" width="40" viewBox="0 0 24 24">
+					<path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+					<path d="M0-.75h24v24H0z" fill="none"/>
+				</svg> -->
+			</a>
 		</div>
 
 		<section id="sectionEvAn">
@@ -82,7 +190,7 @@
 				<div class="row">
 					<div id="upcomingEvents" class="col-md-8">
 						<h1 class="section-title">UPCOMING EVENTS</h1>
-						
+
 						<div class="row" style="margin: 0;">
 							<a href="#" class="col-md-6 an-event layout center">
 								<div class="event-date layout vertical center-center">
@@ -91,6 +199,9 @@
 								</div>
 								<div class="event-info flex layout vertical">
 									<h3>Block III Classes for IFM Master’s Begin</h3>
+									<p>
+										Time and venue to be announced later.
+									</p>
 								</div>
 							</a>
 
@@ -158,68 +269,68 @@
 				<div class="row">
 					<div class="col-md-6 layout news-item">
 						<div class="image">
-							<img src="img/soccer.jpg" alt="">
-						</div>
-						<div class="text layout vertical justified">
-							<div>
-								<span>January 18th</span>
-								<h3 class="unbold">IFM staff wins the first ever inclusion soccer bonanza.
-								</h3 class="unbold">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil officia, doloremque nisi.
-								</p>
-							</div>
-							<a href="#">Read More >></a>
-						</div>
-					</div>
-
-					<div class="col-md-6 layout news-item">
-						<div class="image">
-							<img src="img/girls.jpg" alt="">
+							<img src="img/news3.jpg" alt="">
 						</div>
 						<div class="text layout vertical justified">
 							<div>
 								<span>February 18th</span>
 								<h3 class="unbold">
-									Respect paid to the highest performing girls.
+									"Go out, use what you learned here and remember to dream" - Guest of honour 2017 Graduation.
 								</h3 class="unbold">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil officia, doloremque nisi.
 								</p>
 							</div>
-							<a href="#">Read More >></a>
+							<a href="news_single.html">Read More >></a>
 						</div>
 					</div>
 
 					<div class="col-md-6 layout news-item">
 						<div class="image">
-							<img src="img/seminar.jpg" alt="">
+							<img src="img/news.jpg" alt="">
 						</div>
 						<div class="text layout vertical justified">
 							<div>
-								<span>March 29th</span>
-								<h3 class="unbold">
-									Awareness seminar concluded with huge success.
+								<span>January 18th</span>
+								<h3 class="unbold">College Expose 2018 concludes with a blazing success.
 								</h3 class="unbold">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil officia, doloremque nisi.
 								</p>
 							</div>
-							<a href="#">Read More >></a>
+							<a href="news_single.html">Read More >></a>
 						</div>
 					</div>
 
 					<div class="col-md-6 layout news-item">
 						<div class="image">
-							<img src="img/stakeholders.jpg" alt="">
+							<img src="img/news2.jpg" alt="">
+						</div>
+						<div class="text layout vertical justified">
+							<div>
+								<span>February 18th</span>
+								<h3 class="unbold">
+									IFMSO launches the 'inclusion and togetherness' programme.
+								</h3 class="unbold">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil officia, doloremque nisi.
+								</p>
+							</div>
+							<a href="news_single.html">Read More >></a>
+						</div>
+					</div>
+
+					<div class="col-md-6 layout news-item">
+						<div class="image">
+							<img src="img/news4.jpg" alt="">
 						</div>
 						<div class="text layout vertical justified">
 							<div>
 								<span>April 7th</span>
 								<h3 class="unbold">
-									Stakeholders very pleased with the industry appeal of IFM graduates.
+									Community Aid: The 2018 tour starts at Mwananyamala orphanage with 30 attendees.
 								</h3 class="unbold">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil officia, doloremque nisi.
 								</p>
 							</div>
-							<a href="#">Read More >></a>
+							<a href="news_single.html">Read More >></a>
 						</div>
 					</div>
 				</div>
@@ -227,26 +338,27 @@
 		</section>
 
 		<section id="ctaJoin" class="cta">
-		    <div class="text layout vertical center-center">
+			<div class="text layout vertical center-center">
 				<span>OUR MOTTO</span>
-		        <h5>Jifunze Uhudumie</h5>
-		        <!-- <p>
+				<h5>Jifunze Uhudumie</h5>
+				<!-- <p>
 		            IFM was built upon the pillar of students gaining knowledge to serve their communities, join us and become an informed citizen.
 		        </p> -->
-		        <a href="#" class="btn">
-		            Become a student
-		        </a>
-		    </div>
+				<a href="admission.html" class="btn">
+					Become a student
+				</a>
+			</div>
 		</section>
 
 		<section id="sectionCourses">
-			<div class="section-wrapper">				
+			<div class="section-wrapper">
 				<div class="row">
-					<div class="col-md-4">
-						<h1 class="section-title centere">Popular Courses</h1>
-						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores id eum eveniet incidunt quae sunt, vel praesentium culpa eaque, ad ducimus aut odio rerum tenetur excepturi nobis voluptatum libero rem!</p>
+					<div class="col-md-4" style="margin-top: 20px">
+						<h1 class="section-title centere">POPULAR COURSES</h1>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores id eum eveniet incidunt quae sunt, vel
+							praesentium culpa eaque, ad ducimus aut odio rerum tenetur excepturi nobis voluptatum libero rem!</p>
 						<br>
-						<a href="#">See all courses &nbsp;>></a>
+						<a href="programmes.html">See all courses &nbsp;>></a>
 					</div>
 
 					<!-- .col-md-8>.row>.col-md-4.course-item*6>.course-image>.course-icon+h3{Bachelor of course $}+p{$, 000 Students so far}+a[href="#"]{Enroll now} -->
@@ -259,7 +371,7 @@
 									</div>
 									<h3>Bachelor of Banking Finance</h3>
 									<p>5,200 students since 2002</p>
-									<a href="#">Enroll Now</a>
+									<a href="course.html">Learn More >></a>
 								</div>
 							</div>
 							<div class="col-md-4">
@@ -269,7 +381,7 @@
 									</div>
 									<h3>Bachelor of Taxation</h3>
 									<p>1,200 students since 1998</p>
-									<a href="#">Enroll Now</a>
+									<a href="course.html">Learn More >></a>
 								</div>
 							</div>
 							<div class="col-md-4">
@@ -279,13 +391,13 @@
 									</div>
 									<h3>Bachelor of Accounting</h3>
 									<p>3,000 students since 2000</p>
-									<a href="#">Enroll Now</a>
+									<a href="course.html">Learn More >></a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>		
+			</div>
 		</section>
 
 		<section id="sectionCampus">
@@ -296,7 +408,7 @@
 						<div class="campus-item">
 							<div class="image layout vertical inline center-center">
 								<h3 class="unbold">Main Campus</h3>
-								<a href="#">learn more&nbsp; >></a>
+								<a href="campus.html">learn more&nbsp; >></a>
 							</div>
 							<p>
 								Dar es Salaam City Centre, Shaaban Robert Street, opposite the National Museum.
@@ -307,7 +419,7 @@
 						<div class="campus-item">
 							<div class="image layout vertical inline center-center">
 								<h3 class="unbold">Mwanza Campus</h3>
-								<a href="#">learn more&nbsp; >></a>
+								<a href="campus2.html">learn more&nbsp; >></a>
 							</div>
 							<p>Isamilo area, Machemba Road opposite Sekou Toure Hospital. Walking distance from City centre.</p>
 						</div>
@@ -337,8 +449,16 @@
 			<div class="footer-section for-lg">
 				<h5>QUICK LINKS</h5>
 				<a href="#">About Us</a>
-				<a href="#">FAQs</a>
+				<a href="#">Admission</a>
+				<a href="#">Programmes</a>
+				<a href="#">Brochures</a>
+			</div>
+
+			<div class="footer-section for-lg">
+				<h5>STUDENT LINKS</h5>
+				<a href="#">Announcements</a>
 				<a href="#">Student Code of conduct</a>
+				<a href="#">IFM SIS</a>
 				<a href="#">Almanac</a>
 			</div>
 		</div>
@@ -352,47 +472,47 @@
 					<a href="#">Site Map</a>
 					<a href="#">Terms &amp; Conditions</a>
 				</div>
-			</div>		
+			</div>
 		</div>
 	</footer>
 
 	<script src="js/jquery.min.js"></script>
 	<script>
 		$('a[href*="#"]')
-        // Remove links that don't actually link to anything
-            .not('[href="#"]')
-            .not('[href="#0"]')
-            .click(function(event) {
-                // On-page links
-                if (
-                    location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '')
-                    &&
-                    location.hostname === this.hostname
-                ) {
-                    // Figure out element to scroll to
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                    // Does a scroll target exist?
-                    if (target.length) {
-                        // Only prevent default if animation is actually gonna happen
-                        event.preventDefault();
-                        $('html, body').animate({
-                            scrollTop: target.offset().top
-                        }, 1000, function() {
-                            // Callback after animation
-                            // Must change focus!
-                            var $target = $(target);
-                            $target.focus();
-                            if ($target.is(":focus")) { // Checking if the target was focused
-                                return false;
-                            } else {
-                                $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-                                $target.focus(); // Set focus again
-                            };
-                        });
-                    }
-                }
-            });
+			// Remove links that don't actually link to anything
+			.not('[href="#"]')
+			.not('[href="#0"]')
+			.click(function (event) {
+				// On-page links
+				if (
+					location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') &&
+					location.hostname === this.hostname
+				) {
+					// Figure out element to scroll to
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+					// Does a scroll target exist?
+					if (target.length) {
+						// Only prevent default if animation is actually gonna happen
+						event.preventDefault();
+						$('html, body').animate({
+							scrollTop: target.offset().top
+						}, 1000, function () {
+							// Callback after animation
+							// Must change focus!
+							var $target = $(target);
+							$target.focus();
+							if ($target.is(":focus")) { // Checking if the target was focused
+								return false;
+							} else {
+								$target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+								$target.focus(); // Set focus again
+							};
+						});
+					}
+				}
+			});
 	</script>
 </body>
+
 </html>
