@@ -163,7 +163,7 @@ section p a{
 	background: #3b3a71;
 	overflow: hidden;
 	border-radius: 3px;
-	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
+	box-shadow: 3px 3px 120px rgba(59, 58, 113, 0.72);
 }
 
 #navigator{
@@ -236,7 +236,7 @@ section p a{
 	font-size: .8em;
 	line-height: 1.5em;
 	margin-top: 0.3em;
-	color: #9090af;
+	color: #a1a0c3;
 }
 
 #rectorWordWrapper{
