@@ -29,7 +29,7 @@ section.right .text{
 }
 
 
-section h3 {
+section .text h3 {
 	font-family: sans-serif !important;
 	font-size: 1em;
 	font-weight: 700;
@@ -58,19 +58,8 @@ section p a{
 	color: var(--main-color)
 }
 
-#topManagement h4 {
-	text-transform: uppercase;
-	letter-spacing: 1.3px;
-	display: inline-block;
-	padding-bottom: 0.6em;
-	margin-bottom: 0.9em;
-	font-size: 1.6em;
-	border-bottom: 2px solid var(--main-color);
-	color: var(--main-color);
-}
-
 #sectionAbout{
-	border-bottom: 1px solid #e8e8e8;
+	border-bottom: 1px solid #ddd;
 }
 
 #aboutBoxes .box:first-child {
@@ -163,6 +152,93 @@ section p a{
 	border-color: #908a7e;
 }
 
+#topManagement{
+	/* padding: 6em 0; */
+	margin-bottom: 1em;
+}
+
+#topManagement .section-wrapper{
+	padding: 0;
+	max-width: 1000px;
+	background: #3b3a71;
+	overflow: hidden;
+	border-radius: 3px;
+	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
+}
+
+#navigator{
+	color: #e1e0f7;
+	padding: 1em 1.5em;
+	background: #2f2e5d;
+	/* border-bottom: 1px solid #545392; */
+}
+
+#navigator a{
+	font-size: 0.85em;
+	padding: 0.5em;
+	margin-right: 0.5em;
+}
+
+#navigator a.active{
+	background: rgba(105, 104, 158, 0.88);
+	color: #fff;
+}
+
+#topManagement h4 {
+	text-transform: uppercase;
+	font-size: 1.15em;
+	margin-right: 1em;
+}
+
+#staffList{
+	padding: 2em;
+	padding-bottom: 0.2em;
+}
+
+.staff-item {
+	text-align: center;
+	margin: auto;
+	max-width: 320px;
+	min-height: calc(100% - 2.5em);
+	text-align: center;
+	margin-bottom: 1.8em;
+}
+
+.staff-image {
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	margin: 0 auto;
+	color: #fff;
+	margin-bottom: 0.9em;
+	overflow: hidden;
+	background: #d5d4fb;
+}
+
+.staff-image img {
+	background: #ccc;
+	width: 100% !important;
+	height: 100% !important;
+	/* height: 240px; */
+	object-fit: cover;
+	object-position: top center;
+	mix-blend-mode: multiply;
+}
+
+.staff-item h3 {
+	font-size: 0.95em;
+	margin-bottom: 0.2em;
+	color: #cecef5;
+}
+
+.staff-item p {
+	font-family: Lato, sans-serif;
+	font-size: .8em;
+	line-height: 1.5em;
+	margin-top: 0.3em;
+	color: #9090af;
+}
+
 #rectorWordWrapper{
 	min-height: 400px;
 	max-width: 1000px;
@@ -227,52 +303,6 @@ section p a{
 	line-height: 0;
 	display: block;
 	margin-top: 4.2em;
-}
-
-.staff-item {
-	text-align: center;
-	padding-top: 2em;
-	margin: auto;
-	max-width: 320px;
-	min-height: calc(100% - 2.5em);
-	text-align: center;
-	margin-bottom: 2em;
-}
-
-.staff-image {
-	width: 200px;
-	height: 200px;
-	border-radius: 50%;
-	margin: 0 auto;
-	color: #fff;
-	margin-bottom: 0.9em;
-	font-size: 1.48em;
-	overflow: hidden;
-}
-
-.staff-image img {
-	background: #ccc;
-	width: 100% !important;
-	height: 100% !important;
-	/* height: 240px; */
-	object-fit: cover;
-	object-position: top center
-}
-
-.staff-item h3 {
-	font-size: 1.25em;
-	margin-bottom: 0.2em;
-}
-
-.staff-item p {
-	margin-bottom: 1.6em;
-	max-width: 80%;
-	
-	font-family: Lato, sans-serif;
-	font-size: .9em;
-	line-height: 1.5em;
-	margin-top: 0.3em;
-	color: #777;
 }
 /*MEDIA QUERIES*/
 @media screen and (min-width: 521px){
