@@ -186,8 +186,13 @@ section p a{
 
 #topManagement h4 {
 	text-transform: uppercase;
-	font-size: 1.15em;
-	margin-right: 1em;
+	font-size: 1.8em;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 1.6em;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	color: #3c3c98;
 }
 
 #staffList{
