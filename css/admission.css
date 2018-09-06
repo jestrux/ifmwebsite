@@ -105,6 +105,7 @@
 	width: 100%;
 	font-size: 0.85em;
 	margin-bottom: 1em;
+	border: 1.5px solid var(--main-color)
 }
 
 #admissionContent{
