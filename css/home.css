@@ -16,6 +16,10 @@ body {
 	/* background-image: url(../img/banner.jpg); */
 }
 
+#banner:before{
+	display: none;
+}
+
 #banner img{
 	position: absolute;
 	left: 0;
