@@ -111,6 +111,7 @@ nav a.active{
 }
 
 .section-title{
+    text-transform: uppercase;
 	font-family: Bold, sans-serif;
 	font-size: 1.7em;
     font-size: 1.4em;
