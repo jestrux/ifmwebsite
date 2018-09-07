@@ -294,10 +294,12 @@ section{
 	border-left: 1px solid #ccc;
 }
 
-#announcements .section-title{
+#announcements .section-title,
+#upcomingEvents .section-title {
+	min-height: 35px;
 	/* font-size: 1.3em; */
 	/* min-height: 35px; */
-	font-family: Bold, sans-serif !important;
+	/* font-family: Bold, sans-serif !important; */
 }
 
 .an-announcement{
