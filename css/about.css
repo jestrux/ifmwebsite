@@ -253,7 +253,7 @@ section p a{
 #slider{
 	position: relative;
 	width: 200%;
-	transform: translateX(-50%)
+	transform: translateX(-49%)
 }
 
 #slider .row{
