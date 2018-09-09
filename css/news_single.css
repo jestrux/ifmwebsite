@@ -1,62 +1,9 @@
-
-#banner{
-	-webkit-background-size: cover;
-	background-size: cover;
-}
-
-#banner a{
-	display: block;
-	margin-top: 1.5em;
-	min-width: 220px;
-    border-radius: 50px;
-    padding: 1em 2.6em;
-    background: #fff;
-    color: #0c0b64;
-    text-align: center;
-}
-
-#bannerImage{
-	width: 50%;
-	max-width: 50%;
-	height: 370px;
-	overflow: hidden;
-}
-
-#bannerImage img{
-	width: 100%;
-	min-height: 100%;
-	object-fit: cover;
-	object-position: center;
-}
-
-#banner .text{
-	min-width: 50%;
-	z-index: 1;
-	color: #fff;
-	background: var(--main-color);
-}
-
-#banner h2{
-	font-family: Black, sans-serif;
-	font-family: Regular, sans-serif;
-	text-align: center;
-	font-size: 3.5vw;
-	max-width: 95%;
-}
-
-#banner h2 span{
-	font-family: Light, sans-serif;
-	display: block;
-	font-size: 0.5em;
-	margin-top: 0.3em;
-}
-
-#newsPage>.section-wrapper {
+#newsPage > .section-wrapper {
 	margin: 3em auto;
 }
 
 #newsContent{
-	max-width: 1000px;
+	/* max-width: 1000px; */
 	margin: auto;
 }
 
@@ -71,7 +18,7 @@
 
 #newsContent h2 {
 	font-family: Light, sans-serif;
-	font-size: 2.8em;
+	font-size: 2.2em;
 	line-height: 1.2em;
 	margin-bottom: 0.4em;
 }
@@ -135,6 +82,48 @@
 	margin-top: 1em;
 	margin-bottom: 0.5em;
 	color: #555;
+}
+
+#otherNews{
+	width: 350px;
+	margin-left: 2.5em;
+}
+
+#otherNews h3 {
+	font-size: 1em;
+	line-height: 1.2;
+	max-width: 95%;
+	color: #555;
+	letter-spacing: 0.04em;
+	margin-bottom: 1em;
+}
+
+.news-item{
+	margin-bottom: 2em;
+}
+
+.news-item .image{
+	height: 90px;
+	width: 40%;
+	min-width: 40%;
+	margin-right: 1em;
+}
+
+.news-item h5 {
+	font-size: 1.1em;
+	line-height: 1.4;
+	max-width: 95%;
+	color: #222;
+}
+
+#otherNews svg{
+	width: 24px;
+	height: 24px;
+	margin-right: 0.8em;
+}
+
+#otherNews svg:not(:hover){
+	fill: #888;
 }
 
 /*MEDIA QUERIES*/
