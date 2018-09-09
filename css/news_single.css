@@ -103,6 +103,7 @@
 }
 
 .news-item .image{
+	background: #ddd;
 	height: 90px;
 	width: 40%;
 	min-width: 40%;
