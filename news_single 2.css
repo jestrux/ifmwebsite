@@ -1,0 +1,147 @@
+
+#banner{
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+#banner a{
+	display: block;
+	margin-top: 1.5em;
+	min-width: 220px;
+    border-radius: 50px;
+    padding: 1em 2.6em;
+    background: #fff;
+    color: #0c0b64;
+    text-align: center;
+}
+
+#bannerImage{
+	width: 50%;
+	max-width: 50%;
+	height: 370px;
+	overflow: hidden;
+}
+
+#bannerImage img{
+	width: 100%;
+	min-height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+#banner .text{
+	min-width: 50%;
+	z-index: 1;
+	color: #fff;
+	background: var(--main-color);
+}
+
+#banner h2{
+	font-family: Black, sans-serif;
+	font-family: Regular, sans-serif;
+	text-align: center;
+	font-size: 3.5vw;
+	max-width: 95%;
+}
+
+#banner h2 span{
+	font-family: Light, sans-serif;
+	display: block;
+	font-size: 0.5em;
+	margin-top: 0.3em;
+}
+
+#newsPage>.section-wrapper {
+	margin: 3em auto;
+}
+
+#newsContent{
+	max-width: 1000px;
+	margin: auto;
+}
+
+#newsContent img {
+	height: 460px;
+	width: 100%;
+	background: #ddd;
+	object-fit: cover;
+	object-position: top;
+	margin-bottom: 1em;
+}
+
+#newsContent h2 {
+	font-family: Light, sans-serif;
+	font-size: 2.8em;
+	line-height: 1.2em;
+	margin-bottom: 0.4em;
+}
+
+#twitterbtn{
+	font-size: 14px;
+	line-height: 0;
+	margin-left: 10px;
+	border-radius: 35px;
+}
+
+#twitterbtn i {
+	margin-left: 1px;
+	margin-right: -5px;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	background: #08a0e9;
+	color: #fff;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+#twitterbtn span{
+	border: 1px solid #ddd;
+	border-left: 0;
+	background: #f8f8f8;
+	padding: 0.05em 0;
+	padding-left: 16px;
+	padding-right: 1.2em;
+	border-radius: 0 35px 35px 0;
+}
+
+#twitterbtn span:before{
+	content: '';
+	position: absolute;
+	left: -23px;
+	width: 35px;
+	height: 35px;
+	background: #fff;
+	border-radius: 35px;
+	z-index: 0
+}
+
+#newsContent small {
+	font-family: Light, sans-serif;
+	display: block;
+	margin-bottom: 2em;
+}
+
+#newsContent strong {
+	font-family: Regular, sans-serif;
+	color: var(--main-color);
+}
+
+#newsContent p {
+	font-family: Lato, sans-serif;
+	font-size: 1.05em;
+	line-height: 2em;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+	color: #555;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 521px){
+    
+}
+
+@media screen and (max-width: 520px){
+    
+}

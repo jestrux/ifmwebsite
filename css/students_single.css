@@ -1,0 +1,58 @@
+
+#newsPage>.section-wrapper {
+	margin: 3em auto;
+}
+
+#academicsContent{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+#academicsContent img {
+	height: 360px;
+	width: 100%;
+	background: #ddd;
+	object-fit: cover;
+	object-position: top;
+	margin-bottom: 1em;
+}
+
+#academicsContent h2 {
+	font-family: Light, sans-serif;
+	font-size: 2em;
+	line-height: 1.2em;
+	margin-bottom: 0.4em;
+}
+
+#academicsContent h3 {
+	padding-top: 2em;
+}
+
+#academicsContent small {
+	font-family: Light, sans-serif;
+	display: block;
+	margin-bottom: 2em;
+}
+
+#academicsContent strong {
+	font-family: Regular, sans-serif;
+	color: var(--main-color);
+}
+
+#academicsContent p {
+	font-family: Lato, sans-serif;
+	font-size: 1.05em;
+	line-height: 2em;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+	color: #555;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 521px){
+    
+}
+
+@media screen and (max-width: 520px){
+    
+}
